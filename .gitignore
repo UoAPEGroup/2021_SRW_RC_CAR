@@ -101,8 +101,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-marksmen-smart-energy-firebase-adminsdk-gpfyv-f7551b8cac.json
-marksmen-smart-energy-2-firebase-adminsdk-67vq6-98fed75079.json
 # local env files
 .env.local
 .env.*.local
