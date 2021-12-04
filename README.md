@@ -12,3 +12,16 @@ For more information about branching see:
 
 - git bash: [Atlassian tutorial](https://www.atlassian.com/git/tutorials/using-branches])
 - Github Desktop: [the official tutorial](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/making-changes-in-a-branch/managing-branches)
+
+## Software used
+Our design was implemented with the aid of the following software: 
+1. Altium - for PCB design. 
+2. Ansys Maxwell (via FlexIT) - for simulating magnetics. 
+3. MATLAB. 
+4. Plecs.
+5. Atmel Studio - for writing firmware. 
+6. Proteus - for simulating firmware. 
+
+## Project overview 
+[Download PDF](Overview/project-overview.pdf)
+
