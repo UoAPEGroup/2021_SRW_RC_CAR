@@ -25,7 +25,7 @@
             \node at (5,-1) {$l$}; 
 
             \draw[blue, dashed] (3,2.45) rectangle (7.21,0.55); 
-            % \draw[dashed, red] (0,1.5) ++(10,0); 
+            \draw[dashed, red] (0,1.5) to ++(10,0); 
 
         \end{tikzpicture}
         \caption{Simplified sketch of track top view; blue dashed rectangle represents car.}\label{track_top_view}
@@ -36,8 +36,10 @@
     \begin{itemize}
         \item $l > 1000\rm mm$. 
         \item $w = 300\rm mm$. 
-        \item Tolerance of car alignment: $\pm 50\rm mm$. 
+        \item Tolerance of car alignment\footnotemark: $\pm 50\rm mm$. 
     \end{itemize}
+    \footnotetext{This is the maximum deviation of the center of the car from the center line 
+        (red in Figure~\ref{track_top_view}) of the track.} % Verify this later. 
 
     \section{System diagrams}
     Our design can be partitioned into three main sections: 
@@ -53,6 +55,8 @@
         \begin{circuitikz}[american]
             \node[fourport, scale = 2, t = (1)] (fullbridge) at (0,0){};
             \node[fourport, scale = 2, t = (2)] (compensation) at (5,0){}; 
+            \node(fbtxt) at (0,-1) {Full bridge}; 
+            \node(comptxt) at (5,-1) {Compensation}; 
 
             \draw(fullbridge.1) to[short] ++ (-2,0) node[ground] (gnd){};
             \draw(fullbridge.4) to[short] ++ (-2,0) to[V, l = $V_{\subtxt{IN}}$] (gnd);
@@ -65,7 +69,10 @@
         \caption{System diagram for the primary side}\label{primary_sys_diagram}
     \end{figure}
 
-    Figure~\ref{primary_sys_diagram} outlines the hardware of our primary side. A DC voltage $30\txt{V}\leq V_{\subtxt{IN}}\leq 45\rm V$ 
+    Figure~\ref{primary_sys_diagram} outlines the hardware of our primary side. 
+    A DC voltage $30\txt{V}\leq V_{\subtxt{IN}}\leq 45\rm V$\footnote{Duleepa recommends 30V as the benchtop power supply in the labs can 
+    be used to supply this voltage. The upper limit on $V_{\subtxt{IN}}$ ensures that it does not exceed about 48V above which 
+    we cannot operate them in the labs.} % 
     is used as the input. As we must have AC for IPT to work\footnotemark, a \bd{full-bridge inverter} (1) transforms the DC voltage 
     to a high-frequency AC voltage. An \bd{LCL} compensation network (2) with partial series compensation follows it. 
     $L_1$ is the primary coil. 
@@ -74,8 +81,8 @@
     current will not cause any changing flux and hence voltage induced in the secondary. Only AC will suffice.}
 
     \subsection{Secondary side}
-    Unlike the primary, the secondary will use \bd{parallel} compensation via the capacitor $C_{st}$. A rectifier followed 
-    by a voltage regulator (1) % Check this with others later. Are we using a voltage regulator?  
+    Unlike the primary, the secondary employs \bd{parallel} compensation via the capacitor $C_{st}$. A rectifier followed 
+    by a voltage regulator (3) % Check this with others later. Are we using a voltage regulator?  
     generates a DC voltage which is stepped up to $V_{\subtxt{OUT}}$ via a \bd{boost converter} (4). 
     $V_{\subtxt{OUT}}$ is optimally 10V\footnotemark~but can drop as low as 4V depending on the alignment of the car 
     with the center of the track. 
@@ -88,7 +95,9 @@
         \centering 
         \begin{circuitikz}[american]
             \node[fourport, scale = 2, t = (3)] (reg) at (0,0){};
-            \node[fourport, scale = 2, t = (4)] (boost) at (5,0){}; 
+            \node[fourport, scale = 2, t = (4)] (boost) at (5,0){};
+            \node(regtxt) at (0,-1) {Rectifier}; 
+            \node(boosttxt) at (5,-1) {Boost converter}; 
 
             \draw(reg.1) to[short] ++ (-2,0) node[ground] (gnd){};
             \draw(reg.4) to[short] ++ (-2,0) coordinate (C) to[C, l = $C_{st}$, *-*] (gnd);
@@ -103,6 +112,8 @@
         \end{circuitikz}
         \caption{System diagram for the secondary side}\label{secondary_sys_diagram}
     \end{figure}
+    
+    $L_2$ is the secondary coil. 
 
     \subsection{Motor driver}
     A pulse-width modulated (PWM) signal $v_{\subtxt{PWM}}$ used to drive the motor is produced via 
@@ -114,6 +125,7 @@
         \centering 
         \begin{circuitikz}[american]
             \node[fourport, scale = 2, t = (5)] (fullbridge) at (0,0){};
+            \node(fbtxt) at (0,-1) {Full bridge};
 
             \draw(fullbridge.4) to[short] ++ (-2,0) coordinate (A); 
             \draw(fullbridge.1) to[short] ++ (-2,0) coordinate (B);
@@ -128,6 +140,7 @@
             \draw(E) to[twoport, t = Motor] (F); 
 
         \end{circuitikz}
+        \caption{System diagram for the motor driver}\label{motor_driver_sys_diagram}
     \end{figure} 
 
 \end{document}
