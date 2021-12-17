@@ -61,7 +61,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=DQAQGTBO
+DocumentUniqueId=
 
 [Document2]
 DocumentPath=Project Outputs for Workshop_Library\Workshop_Library\SchLib.SchLib
@@ -78,7 +78,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=ULBBZVGC
+DocumentUniqueId=
 
 [SearchPath1]
 Path=C:\Users\5u3a1\Desktop\2021_SRW_RC_CAR\Primary\Hardware\Altium\Library\Project Outputs for Workshop_Library\Workshop_Library\*.*
