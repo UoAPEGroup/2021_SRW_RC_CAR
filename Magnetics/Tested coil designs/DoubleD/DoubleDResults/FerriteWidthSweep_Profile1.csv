@@ -1,0 +1,13 @@
+Variation,FerriteCoilGap,FerriteWidth,N,N2,PrimaryCoilWidth,PrimaryCuttoutOffset,PrimaryCuttoutWidth,SCLength,SecondaryCoilThickness,SecondaryFerriteHeight,SecondaryFerriteLength,SecondaryFerriteWidth,SecondaryFerrriteOffset,secondaryYOffset,Start,Stop,Elapsed,Analysis Machine
+1,10mm,80mm,10,10,5mm,125mm,75mm,40mm,5mm,8mm,100mm,15mm,30mm,50mm,11:38:03:323,11:46:03:298,00:07:59:975,Local   Machine
+2,10mm,100mm,10,10,5mm,125mm,75mm,40mm,5mm,8mm,100mm,15mm,30mm,50mm,11:46:03:388,11:52:10:626,00:06:07:238,Local   Machine
+3,10mm,120mm,10,10,5mm,125mm,75mm,40mm,5mm,8mm,100mm,15mm,30mm,50mm,11:52:10:718,11:58:09:418,00:05:58:700,Local   Machine
+4,10mm,140mm,10,10,5mm,125mm,75mm,40mm,5mm,8mm,100mm,15mm,30mm,50mm,11:58:09:512,12:03:56:730,00:05:47:218,Local   Machine
+5,10mm,160mm,10,10,5mm,125mm,75mm,40mm,5mm,8mm,100mm,15mm,30mm,50mm,12:03:56:831,12:10:28:856,00:06:32:025,Local   Machine
+6,10mm,180mm,10,10,5mm,125mm,75mm,40mm,5mm,8mm,100mm,15mm,30mm,50mm,12:10:28:965,12:16:39:057,00:06:10:092,Local   Machine
+7,10mm,200mm,10,10,5mm,125mm,75mm,40mm,5mm,8mm,100mm,15mm,30mm,50mm,12:16:39:171,12:20:56:693,00:04:17:522,Local   Machine
+8,10mm,220mm,10,10,5mm,125mm,75mm,40mm,5mm,8mm,100mm,15mm,30mm,50mm,12:20:56:791,12:20:59:859,00:00:03:068,Local   Machine
+9,10mm,240mm,10,10,5mm,125mm,75mm,40mm,5mm,8mm,100mm,15mm,30mm,50mm,12:20:59:978,12:25:05:464,00:04:05:486,Local   Machine
+10,10mm,260mm,10,10,5mm,125mm,75mm,40mm,5mm,8mm,100mm,15mm,30mm,50mm,12:25:05:592,12:29:59:233,00:04:53:641,Local   Machine
+11,10mm,280mm,10,10,5mm,125mm,75mm,40mm,5mm,8mm,100mm,15mm,30mm,50mm,12:29:59:370,12:35:02:628,00:05:03:258,Local   Machine
+12,10mm,300mm,10,10,5mm,125mm,75mm,40mm,5mm,8mm,100mm,15mm,30mm,50mm,12:35:02:755,12:39:30:800,00:04:28:045,Local   Machine
