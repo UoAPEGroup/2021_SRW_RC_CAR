@@ -257,7 +257,7 @@ $begin 'AnsoftProject'
 		$begin 'TemperatureSettings'
 			IncludeTemperatureDependence=false
 			EnableFeedback=false
-			Temperatures(202, '22cel', 230, '22cel', 258, '22cel', 347, '22cel', 851, '22cel', 963, '22cel', 1005, '22cel', 1029, '22cel', 1279, '22cel', 1307, '22cel', 1674, '22cel', 1702, '22cel', 1730, '22cel', 1758, '22cel', 1786, '22cel', 1814, '22cel', 1842, '22cel', 1870, '22cel', 1898, '22cel', 1926, '22cel', 1954, '22cel', 1982, '22cel', 2010, '22cel', 2038, '22cel', 2066, '22cel', 2094, '22cel', 2122, '22cel', 2150, '22cel', 2178, '22cel')
+			Temperatures(202, '22cel', 230, '22cel', 258, '22cel', 347, '22cel', 851, '22cel', 963, '22cel', 1005, '22cel', 1029, '22cel', 1279, '22cel', 1307, '22cel', 2207, '22cel', 2235, '22cel', 2263, '22cel', 2291, '22cel', 2319, '22cel', 2347, '22cel', 2375, '22cel', 2403, '22cel', 2431, '22cel')
 			BoundaryTemperatures()
 		$end 'TemperatureSettings'
 		ObjsEnabledForDeformation()
@@ -303,7 +303,7 @@ $begin 'AnsoftProject'
 				VariableProp('PrimaryCoilWidth', 'UD', '', '4.3mm')
 				VariableProp('AluminumThickness', 'UD', '', '5mm')
 				VariableProp('AluminumFerriteGap', 'UD', '', '5mm')
-				VariableProp('FirstFerritePosition', 'UD', '', '-500mm')
+				VariableProp('FirstFerritePosition', 'UD', '', '-450mm')
 				VariableProp('PrimaryFerriteSpacing', 'UD', '', '100mm')
 			$end 'Properties'
 			VariableOrders[20: 'FerriteWidth', 'FerriteCoilGap', 'SCLength', 'SecondaryFerriteWidth', 'SecondaryFerriteHeight', 'SecondaryFerrriteOffset', 'N2', 'I2', 'secondaryYOffset', 'SecondaryFerriteLength', 'PrimaryCuttoutOffset', 'PrimaryCuttoutWidth', 'N', 'I', 'SecondaryCoilThickness', 'PrimaryCoilWidth', 'AluminumThickness', 'AluminumFerriteGap', 'FirstFerritePosition', 'PrimaryFerriteSpacing']
@@ -324,7 +324,7 @@ $begin 'AnsoftProject'
 			WorkingCS=1
 			$begin 'GeometryCore'
 				BlockVersionID=3
-				DataVersion=57
+				DataVersion=59
 				NativeKernel='ACIS'
 				NativeKernelVersionID=13
 				Units='mm'
@@ -341,7 +341,7 @@ $begin 'AnsoftProject'
 							IDServerObjectTypeID=0
 							IDServerRangeMin=0
 							IDServerRangeMax=2146483647
-							NextUniqueID=2205
+							NextUniqueID=2458
 							MoveBackwards=false
 						$end 'AnsoftRangedIDServer'
 						$begin 'AnsoftRangedIDServer'
@@ -2005,16 +2005,16 @@ $begin 'AnsoftProject'
 								$end 'Operation'
 								$begin 'CloneToOperation'
 									OperationType='DuplicateAlongLine'
-									ID=1672
+									ID=2205
 									ReferenceCoordSystemID=1
 									$begin 'DuplicateToAlongLineParameters'
 										KernelVersion=13
 										ClonedEntity=1307
 										CreateNewObjects=true
-										XComponent='50mm'
+										XComponent='100mm'
 										YComponent='0mm'
 										ZComponent='0mm'
-										NumClones='20'
+										NumClones='10'
 									$end 'DuplicateToAlongLineParameters'
 									ParentPartID=1307
 									ReferenceUDMID=-1
@@ -2043,13 +2043,13 @@ $begin 'AnsoftProject'
 							$begin 'Operations'
 								$begin 'Operation'
 									OperationType='DuplicateBodyAlongLine'
-									ID=1673
+									ID=2206
 									$begin 'CloneFromParameters'
 										KernelVersion=13
 										SourceID=1307
 										WhichClone=0
 									$end 'CloneFromParameters'
-									ParentPartID=1674
+									ParentPartID=2207
 									ReferenceUDMID=-1
 									IsSuppressed=false
 									$begin 'OperationIdentity'
@@ -2063,10 +2063,10 @@ $begin 'AnsoftProject'
 											NumEdges=12
 											NumVertices=8
 										$end 'Topology'
-										BodyID=1674
-										StartFaceID=1675
-										StartEdgeID=1681
-										StartVertexID=1693
+										BodyID=2207
+										StartFaceID=2208
+										StartEdgeID=2214
+										StartVertexID=2226
 										NumNewFaces=6
 										NumNewEdges=12
 										NumNewVertices=8
@@ -2074,15 +2074,15 @@ $begin 'AnsoftProject'
 										EdgeNameAndIDMap()
 										VertexNameAndIDMap()
 										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='1675', '1309'='1676', '1310'='1677', '1311'='1678', '1312'='1679', '1313'='1680')
-											CloneEdges('1314'='1681', '1315'='1682', '1316'='1683', '1317'='1684', '1318'='1685', '1319'='1686', '1320'='1687', '1321'='1688', '1322'='1689', '1323'='1690', '1324'='1691', '1325'='1692')
-											CloneVertices('1326'='1693', '1327'='1694', '1328'='1695', '1329'='1696', '1330'='1697', '1331'='1698', '1332'='1699', '1333'='1700')
+											CloneFaces('1308'='2208', '1309'='2209', '1310'='2210', '1311'='2211', '1312'='2212', '1313'='2213')
+											CloneEdges('1314'='2214', '1315'='2215', '1316'='2216', '1317'='2217', '1318'='2218', '1319'='2219', '1320'='2220', '1321'='2221', '1322'='2222', '1323'='2223', '1324'='2224', '1325'='2225')
+											CloneVertices('1326'='2226', '1327'='2227', '1328'='2228', '1329'='2229', '1330'='2230', '1331'='2231', '1332'='2232', '1333'='2233')
 										$end 'CloneFromOperationIdentityHelper'
 										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
 										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
 										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
 									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
+									PlaceHolderOpnId=2205
 								$end 'Operation'
 							$end 'Operations'
 						$end 'GeometryPart'
@@ -2108,13 +2108,13 @@ $begin 'AnsoftProject'
 							$begin 'Operations'
 								$begin 'Operation'
 									OperationType='DuplicateBodyAlongLine'
-									ID=1701
+									ID=2234
 									$begin 'CloneFromParameters'
 										KernelVersion=13
 										SourceID=1307
 										WhichClone=1
 									$end 'CloneFromParameters'
-									ParentPartID=1702
+									ParentPartID=2235
 									ReferenceUDMID=-1
 									IsSuppressed=false
 									$begin 'OperationIdentity'
@@ -2128,10 +2128,10 @@ $begin 'AnsoftProject'
 											NumEdges=12
 											NumVertices=8
 										$end 'Topology'
-										BodyID=1702
-										StartFaceID=1703
-										StartEdgeID=1709
-										StartVertexID=1721
+										BodyID=2235
+										StartFaceID=2236
+										StartEdgeID=2242
+										StartVertexID=2254
 										NumNewFaces=6
 										NumNewEdges=12
 										NumNewVertices=8
@@ -2139,15 +2139,15 @@ $begin 'AnsoftProject'
 										EdgeNameAndIDMap()
 										VertexNameAndIDMap()
 										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='1703', '1309'='1704', '1310'='1705', '1311'='1706', '1312'='1707', '1313'='1708')
-											CloneEdges('1314'='1709', '1315'='1710', '1316'='1711', '1317'='1712', '1318'='1713', '1319'='1714', '1320'='1715', '1321'='1716', '1322'='1717', '1323'='1718', '1324'='1719', '1325'='1720')
-											CloneVertices('1326'='1721', '1327'='1722', '1328'='1723', '1329'='1724', '1330'='1725', '1331'='1726', '1332'='1727', '1333'='1728')
+											CloneFaces('1308'='2236', '1309'='2237', '1310'='2238', '1311'='2239', '1312'='2240', '1313'='2241')
+											CloneEdges('1314'='2242', '1315'='2243', '1316'='2244', '1317'='2245', '1318'='2246', '1319'='2247', '1320'='2248', '1321'='2249', '1322'='2250', '1323'='2251', '1324'='2252', '1325'='2253')
+											CloneVertices('1326'='2254', '1327'='2255', '1328'='2256', '1329'='2257', '1330'='2258', '1331'='2259', '1332'='2260', '1333'='2261')
 										$end 'CloneFromOperationIdentityHelper'
 										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
 										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
 										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
 									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
+									PlaceHolderOpnId=2205
 								$end 'Operation'
 							$end 'Operations'
 						$end 'GeometryPart'
@@ -2173,13 +2173,13 @@ $begin 'AnsoftProject'
 							$begin 'Operations'
 								$begin 'Operation'
 									OperationType='DuplicateBodyAlongLine'
-									ID=1729
+									ID=2262
 									$begin 'CloneFromParameters'
 										KernelVersion=13
 										SourceID=1307
 										WhichClone=2
 									$end 'CloneFromParameters'
-									ParentPartID=1730
+									ParentPartID=2263
 									ReferenceUDMID=-1
 									IsSuppressed=false
 									$begin 'OperationIdentity'
@@ -2193,10 +2193,10 @@ $begin 'AnsoftProject'
 											NumEdges=12
 											NumVertices=8
 										$end 'Topology'
-										BodyID=1730
-										StartFaceID=1731
-										StartEdgeID=1737
-										StartVertexID=1749
+										BodyID=2263
+										StartFaceID=2264
+										StartEdgeID=2270
+										StartVertexID=2282
 										NumNewFaces=6
 										NumNewEdges=12
 										NumNewVertices=8
@@ -2204,15 +2204,15 @@ $begin 'AnsoftProject'
 										EdgeNameAndIDMap()
 										VertexNameAndIDMap()
 										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='1731', '1309'='1732', '1310'='1733', '1311'='1734', '1312'='1735', '1313'='1736')
-											CloneEdges('1314'='1737', '1315'='1738', '1316'='1739', '1317'='1740', '1318'='1741', '1319'='1742', '1320'='1743', '1321'='1744', '1322'='1745', '1323'='1746', '1324'='1747', '1325'='1748')
-											CloneVertices('1326'='1749', '1327'='1750', '1328'='1751', '1329'='1752', '1330'='1753', '1331'='1754', '1332'='1755', '1333'='1756')
+											CloneFaces('1308'='2264', '1309'='2265', '1310'='2266', '1311'='2267', '1312'='2268', '1313'='2269')
+											CloneEdges('1314'='2270', '1315'='2271', '1316'='2272', '1317'='2273', '1318'='2274', '1319'='2275', '1320'='2276', '1321'='2277', '1322'='2278', '1323'='2279', '1324'='2280', '1325'='2281')
+											CloneVertices('1326'='2282', '1327'='2283', '1328'='2284', '1329'='2285', '1330'='2286', '1331'='2287', '1332'='2288', '1333'='2289')
 										$end 'CloneFromOperationIdentityHelper'
 										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
 										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
 										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
 									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
+									PlaceHolderOpnId=2205
 								$end 'Operation'
 							$end 'Operations'
 						$end 'GeometryPart'
@@ -2238,13 +2238,13 @@ $begin 'AnsoftProject'
 							$begin 'Operations'
 								$begin 'Operation'
 									OperationType='DuplicateBodyAlongLine'
-									ID=1757
+									ID=2290
 									$begin 'CloneFromParameters'
 										KernelVersion=13
 										SourceID=1307
 										WhichClone=3
 									$end 'CloneFromParameters'
-									ParentPartID=1758
+									ParentPartID=2291
 									ReferenceUDMID=-1
 									IsSuppressed=false
 									$begin 'OperationIdentity'
@@ -2258,10 +2258,10 @@ $begin 'AnsoftProject'
 											NumEdges=12
 											NumVertices=8
 										$end 'Topology'
-										BodyID=1758
-										StartFaceID=1759
-										StartEdgeID=1765
-										StartVertexID=1777
+										BodyID=2291
+										StartFaceID=2292
+										StartEdgeID=2298
+										StartVertexID=2310
 										NumNewFaces=6
 										NumNewEdges=12
 										NumNewVertices=8
@@ -2269,15 +2269,15 @@ $begin 'AnsoftProject'
 										EdgeNameAndIDMap()
 										VertexNameAndIDMap()
 										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='1759', '1309'='1760', '1310'='1761', '1311'='1762', '1312'='1763', '1313'='1764')
-											CloneEdges('1314'='1765', '1315'='1766', '1316'='1767', '1317'='1768', '1318'='1769', '1319'='1770', '1320'='1771', '1321'='1772', '1322'='1773', '1323'='1774', '1324'='1775', '1325'='1776')
-											CloneVertices('1326'='1777', '1327'='1778', '1328'='1779', '1329'='1780', '1330'='1781', '1331'='1782', '1332'='1783', '1333'='1784')
+											CloneFaces('1308'='2292', '1309'='2293', '1310'='2294', '1311'='2295', '1312'='2296', '1313'='2297')
+											CloneEdges('1314'='2298', '1315'='2299', '1316'='2300', '1317'='2301', '1318'='2302', '1319'='2303', '1320'='2304', '1321'='2305', '1322'='2306', '1323'='2307', '1324'='2308', '1325'='2309')
+											CloneVertices('1326'='2310', '1327'='2311', '1328'='2312', '1329'='2313', '1330'='2314', '1331'='2315', '1332'='2316', '1333'='2317')
 										$end 'CloneFromOperationIdentityHelper'
 										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
 										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
 										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
 									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
+									PlaceHolderOpnId=2205
 								$end 'Operation'
 							$end 'Operations'
 						$end 'GeometryPart'
@@ -2303,13 +2303,13 @@ $begin 'AnsoftProject'
 							$begin 'Operations'
 								$begin 'Operation'
 									OperationType='DuplicateBodyAlongLine'
-									ID=1785
+									ID=2318
 									$begin 'CloneFromParameters'
 										KernelVersion=13
 										SourceID=1307
 										WhichClone=4
 									$end 'CloneFromParameters'
-									ParentPartID=1786
+									ParentPartID=2319
 									ReferenceUDMID=-1
 									IsSuppressed=false
 									$begin 'OperationIdentity'
@@ -2323,10 +2323,10 @@ $begin 'AnsoftProject'
 											NumEdges=12
 											NumVertices=8
 										$end 'Topology'
-										BodyID=1786
-										StartFaceID=1787
-										StartEdgeID=1793
-										StartVertexID=1805
+										BodyID=2319
+										StartFaceID=2320
+										StartEdgeID=2326
+										StartVertexID=2338
 										NumNewFaces=6
 										NumNewEdges=12
 										NumNewVertices=8
@@ -2334,15 +2334,15 @@ $begin 'AnsoftProject'
 										EdgeNameAndIDMap()
 										VertexNameAndIDMap()
 										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='1787', '1309'='1788', '1310'='1789', '1311'='1790', '1312'='1791', '1313'='1792')
-											CloneEdges('1314'='1793', '1315'='1794', '1316'='1795', '1317'='1796', '1318'='1797', '1319'='1798', '1320'='1799', '1321'='1800', '1322'='1801', '1323'='1802', '1324'='1803', '1325'='1804')
-											CloneVertices('1326'='1805', '1327'='1806', '1328'='1807', '1329'='1808', '1330'='1809', '1331'='1810', '1332'='1811', '1333'='1812')
+											CloneFaces('1308'='2320', '1309'='2321', '1310'='2322', '1311'='2323', '1312'='2324', '1313'='2325')
+											CloneEdges('1314'='2326', '1315'='2327', '1316'='2328', '1317'='2329', '1318'='2330', '1319'='2331', '1320'='2332', '1321'='2333', '1322'='2334', '1323'='2335', '1324'='2336', '1325'='2337')
+											CloneVertices('1326'='2338', '1327'='2339', '1328'='2340', '1329'='2341', '1330'='2342', '1331'='2343', '1332'='2344', '1333'='2345')
 										$end 'CloneFromOperationIdentityHelper'
 										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
 										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
 										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
 									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
+									PlaceHolderOpnId=2205
 								$end 'Operation'
 							$end 'Operations'
 						$end 'GeometryPart'
@@ -2368,13 +2368,13 @@ $begin 'AnsoftProject'
 							$begin 'Operations'
 								$begin 'Operation'
 									OperationType='DuplicateBodyAlongLine'
-									ID=1813
+									ID=2346
 									$begin 'CloneFromParameters'
 										KernelVersion=13
 										SourceID=1307
 										WhichClone=5
 									$end 'CloneFromParameters'
-									ParentPartID=1814
+									ParentPartID=2347
 									ReferenceUDMID=-1
 									IsSuppressed=false
 									$begin 'OperationIdentity'
@@ -2388,10 +2388,10 @@ $begin 'AnsoftProject'
 											NumEdges=12
 											NumVertices=8
 										$end 'Topology'
-										BodyID=1814
-										StartFaceID=1815
-										StartEdgeID=1821
-										StartVertexID=1833
+										BodyID=2347
+										StartFaceID=2348
+										StartEdgeID=2354
+										StartVertexID=2366
 										NumNewFaces=6
 										NumNewEdges=12
 										NumNewVertices=8
@@ -2399,15 +2399,15 @@ $begin 'AnsoftProject'
 										EdgeNameAndIDMap()
 										VertexNameAndIDMap()
 										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='1815', '1309'='1816', '1310'='1817', '1311'='1818', '1312'='1819', '1313'='1820')
-											CloneEdges('1314'='1821', '1315'='1822', '1316'='1823', '1317'='1824', '1318'='1825', '1319'='1826', '1320'='1827', '1321'='1828', '1322'='1829', '1323'='1830', '1324'='1831', '1325'='1832')
-											CloneVertices('1326'='1833', '1327'='1834', '1328'='1835', '1329'='1836', '1330'='1837', '1331'='1838', '1332'='1839', '1333'='1840')
+											CloneFaces('1308'='2348', '1309'='2349', '1310'='2350', '1311'='2351', '1312'='2352', '1313'='2353')
+											CloneEdges('1314'='2354', '1315'='2355', '1316'='2356', '1317'='2357', '1318'='2358', '1319'='2359', '1320'='2360', '1321'='2361', '1322'='2362', '1323'='2363', '1324'='2364', '1325'='2365')
+											CloneVertices('1326'='2366', '1327'='2367', '1328'='2368', '1329'='2369', '1330'='2370', '1331'='2371', '1332'='2372', '1333'='2373')
 										$end 'CloneFromOperationIdentityHelper'
 										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
 										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
 										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
 									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
+									PlaceHolderOpnId=2205
 								$end 'Operation'
 							$end 'Operations'
 						$end 'GeometryPart'
@@ -2433,13 +2433,13 @@ $begin 'AnsoftProject'
 							$begin 'Operations'
 								$begin 'Operation'
 									OperationType='DuplicateBodyAlongLine'
-									ID=1841
+									ID=2374
 									$begin 'CloneFromParameters'
 										KernelVersion=13
 										SourceID=1307
 										WhichClone=6
 									$end 'CloneFromParameters'
-									ParentPartID=1842
+									ParentPartID=2375
 									ReferenceUDMID=-1
 									IsSuppressed=false
 									$begin 'OperationIdentity'
@@ -2453,10 +2453,10 @@ $begin 'AnsoftProject'
 											NumEdges=12
 											NumVertices=8
 										$end 'Topology'
-										BodyID=1842
-										StartFaceID=1843
-										StartEdgeID=1849
-										StartVertexID=1861
+										BodyID=2375
+										StartFaceID=2376
+										StartEdgeID=2382
+										StartVertexID=2394
 										NumNewFaces=6
 										NumNewEdges=12
 										NumNewVertices=8
@@ -2464,15 +2464,15 @@ $begin 'AnsoftProject'
 										EdgeNameAndIDMap()
 										VertexNameAndIDMap()
 										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='1843', '1309'='1844', '1310'='1845', '1311'='1846', '1312'='1847', '1313'='1848')
-											CloneEdges('1314'='1849', '1315'='1850', '1316'='1851', '1317'='1852', '1318'='1853', '1319'='1854', '1320'='1855', '1321'='1856', '1322'='1857', '1323'='1858', '1324'='1859', '1325'='1860')
-											CloneVertices('1326'='1861', '1327'='1862', '1328'='1863', '1329'='1864', '1330'='1865', '1331'='1866', '1332'='1867', '1333'='1868')
+											CloneFaces('1308'='2376', '1309'='2377', '1310'='2378', '1311'='2379', '1312'='2380', '1313'='2381')
+											CloneEdges('1314'='2382', '1315'='2383', '1316'='2384', '1317'='2385', '1318'='2386', '1319'='2387', '1320'='2388', '1321'='2389', '1322'='2390', '1323'='2391', '1324'='2392', '1325'='2393')
+											CloneVertices('1326'='2394', '1327'='2395', '1328'='2396', '1329'='2397', '1330'='2398', '1331'='2399', '1332'='2400', '1333'='2401')
 										$end 'CloneFromOperationIdentityHelper'
 										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
 										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
 										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
 									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
+									PlaceHolderOpnId=2205
 								$end 'Operation'
 							$end 'Operations'
 						$end 'GeometryPart'
@@ -2498,13 +2498,13 @@ $begin 'AnsoftProject'
 							$begin 'Operations'
 								$begin 'Operation'
 									OperationType='DuplicateBodyAlongLine'
-									ID=1869
+									ID=2402
 									$begin 'CloneFromParameters'
 										KernelVersion=13
 										SourceID=1307
 										WhichClone=7
 									$end 'CloneFromParameters'
-									ParentPartID=1870
+									ParentPartID=2403
 									ReferenceUDMID=-1
 									IsSuppressed=false
 									$begin 'OperationIdentity'
@@ -2518,10 +2518,10 @@ $begin 'AnsoftProject'
 											NumEdges=12
 											NumVertices=8
 										$end 'Topology'
-										BodyID=1870
-										StartFaceID=1871
-										StartEdgeID=1877
-										StartVertexID=1889
+										BodyID=2403
+										StartFaceID=2404
+										StartEdgeID=2410
+										StartVertexID=2422
 										NumNewFaces=6
 										NumNewEdges=12
 										NumNewVertices=8
@@ -2529,15 +2529,15 @@ $begin 'AnsoftProject'
 										EdgeNameAndIDMap()
 										VertexNameAndIDMap()
 										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='1871', '1309'='1872', '1310'='1873', '1311'='1874', '1312'='1875', '1313'='1876')
-											CloneEdges('1314'='1877', '1315'='1878', '1316'='1879', '1317'='1880', '1318'='1881', '1319'='1882', '1320'='1883', '1321'='1884', '1322'='1885', '1323'='1886', '1324'='1887', '1325'='1888')
-											CloneVertices('1326'='1889', '1327'='1890', '1328'='1891', '1329'='1892', '1330'='1893', '1331'='1894', '1332'='1895', '1333'='1896')
+											CloneFaces('1308'='2404', '1309'='2405', '1310'='2406', '1311'='2407', '1312'='2408', '1313'='2409')
+											CloneEdges('1314'='2410', '1315'='2411', '1316'='2412', '1317'='2413', '1318'='2414', '1319'='2415', '1320'='2416', '1321'='2417', '1322'='2418', '1323'='2419', '1324'='2420', '1325'='2421')
+											CloneVertices('1326'='2422', '1327'='2423', '1328'='2424', '1329'='2425', '1330'='2426', '1331'='2427', '1332'='2428', '1333'='2429')
 										$end 'CloneFromOperationIdentityHelper'
 										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
 										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
 										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
 									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
+									PlaceHolderOpnId=2205
 								$end 'Operation'
 							$end 'Operations'
 						$end 'GeometryPart'
@@ -2563,13 +2563,13 @@ $begin 'AnsoftProject'
 							$begin 'Operations'
 								$begin 'Operation'
 									OperationType='DuplicateBodyAlongLine'
-									ID=1897
+									ID=2430
 									$begin 'CloneFromParameters'
 										KernelVersion=13
 										SourceID=1307
 										WhichClone=8
 									$end 'CloneFromParameters'
-									ParentPartID=1898
+									ParentPartID=2431
 									ReferenceUDMID=-1
 									IsSuppressed=false
 									$begin 'OperationIdentity'
@@ -2583,10 +2583,10 @@ $begin 'AnsoftProject'
 											NumEdges=12
 											NumVertices=8
 										$end 'Topology'
-										BodyID=1898
-										StartFaceID=1899
-										StartEdgeID=1905
-										StartVertexID=1917
+										BodyID=2431
+										StartFaceID=2432
+										StartEdgeID=2438
+										StartVertexID=2450
 										NumNewFaces=6
 										NumNewEdges=12
 										NumNewVertices=8
@@ -2594,665 +2594,15 @@ $begin 'AnsoftProject'
 										EdgeNameAndIDMap()
 										VertexNameAndIDMap()
 										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='1899', '1309'='1900', '1310'='1901', '1311'='1902', '1312'='1903', '1313'='1904')
-											CloneEdges('1314'='1905', '1315'='1906', '1316'='1907', '1317'='1908', '1318'='1909', '1319'='1910', '1320'='1911', '1321'='1912', '1322'='1913', '1323'='1914', '1324'='1915', '1325'='1916')
-											CloneVertices('1326'='1917', '1327'='1918', '1328'='1919', '1329'='1920', '1330'='1921', '1331'='1922', '1332'='1923', '1333'='1924')
+											CloneFaces('1308'='2432', '1309'='2433', '1310'='2434', '1311'='2435', '1312'='2436', '1313'='2437')
+											CloneEdges('1314'='2438', '1315'='2439', '1316'='2440', '1317'='2441', '1318'='2442', '1319'='2443', '1320'='2444', '1321'='2445', '1322'='2446', '1323'='2447', '1324'='2448', '1325'='2449')
+											CloneVertices('1326'='2450', '1327'='2451', '1328'='2452', '1329'='2453', '1330'='2454', '1331'='2455', '1332'='2456', '1333'='2457')
 										$end 'CloneFromOperationIdentityHelper'
 										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
 										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
 										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
 									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
-								$end 'Operation'
-							$end 'Operations'
-						$end 'GeometryPart'
-						$begin 'GeometryPart'
-							$begin 'Attributes'
-								Name='PrimaryFerrite1_10'
-								Flags=''
-								Color='(64 0 64)'
-								Transparency=0
-								PartCoordinateSystem=1
-								UDMId=-1
-								GroupId=-1
-								MaterialValue='"ferrite"'
-								SurfaceMaterialValue='""'
-								SolveInside=true
-								ShellElement=false
-								ShellElementThickness='0mm'
-								IsMaterialEditable=true
-								UseMaterialAppearance=false
-								IsLightweight=false
-								IsAlwaysHidden=false
-							$end 'Attributes'
-							$begin 'Operations'
-								$begin 'Operation'
-									OperationType='DuplicateBodyAlongLine'
-									ID=1925
-									$begin 'CloneFromParameters'
-										KernelVersion=13
-										SourceID=1307
-										WhichClone=9
-									$end 'CloneFromParameters'
-									ParentPartID=1926
-									ReferenceUDMID=-1
-									IsSuppressed=false
-									$begin 'OperationIdentity'
-										$begin 'Topology'
-											NumLumps=1
-											NumShells=1
-											NumFaces=6
-											NumWires=0
-											NumLoops=6
-											NumCoedges=24
-											NumEdges=12
-											NumVertices=8
-										$end 'Topology'
-										BodyID=1926
-										StartFaceID=1927
-										StartEdgeID=1933
-										StartVertexID=1945
-										NumNewFaces=6
-										NumNewEdges=12
-										NumNewVertices=8
-										FaceNameAndIDMap()
-										EdgeNameAndIDMap()
-										VertexNameAndIDMap()
-										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='1927', '1309'='1928', '1310'='1929', '1311'='1930', '1312'='1931', '1313'='1932')
-											CloneEdges('1314'='1933', '1315'='1934', '1316'='1935', '1317'='1936', '1318'='1937', '1319'='1938', '1320'='1939', '1321'='1940', '1322'='1941', '1323'='1942', '1324'='1943', '1325'='1944')
-											CloneVertices('1326'='1945', '1327'='1946', '1328'='1947', '1329'='1948', '1330'='1949', '1331'='1950', '1332'='1951', '1333'='1952')
-										$end 'CloneFromOperationIdentityHelper'
-										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
-										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
-										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
-									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
-								$end 'Operation'
-							$end 'Operations'
-						$end 'GeometryPart'
-						$begin 'GeometryPart'
-							$begin 'Attributes'
-								Name='PrimaryFerrite1_11'
-								Flags=''
-								Color='(64 0 64)'
-								Transparency=0
-								PartCoordinateSystem=1
-								UDMId=-1
-								GroupId=-1
-								MaterialValue='"ferrite"'
-								SurfaceMaterialValue='""'
-								SolveInside=true
-								ShellElement=false
-								ShellElementThickness='0mm'
-								IsMaterialEditable=true
-								UseMaterialAppearance=false
-								IsLightweight=false
-								IsAlwaysHidden=false
-							$end 'Attributes'
-							$begin 'Operations'
-								$begin 'Operation'
-									OperationType='DuplicateBodyAlongLine'
-									ID=1953
-									$begin 'CloneFromParameters'
-										KernelVersion=13
-										SourceID=1307
-										WhichClone=10
-									$end 'CloneFromParameters'
-									ParentPartID=1954
-									ReferenceUDMID=-1
-									IsSuppressed=false
-									$begin 'OperationIdentity'
-										$begin 'Topology'
-											NumLumps=1
-											NumShells=1
-											NumFaces=6
-											NumWires=0
-											NumLoops=6
-											NumCoedges=24
-											NumEdges=12
-											NumVertices=8
-										$end 'Topology'
-										BodyID=1954
-										StartFaceID=1955
-										StartEdgeID=1961
-										StartVertexID=1973
-										NumNewFaces=6
-										NumNewEdges=12
-										NumNewVertices=8
-										FaceNameAndIDMap()
-										EdgeNameAndIDMap()
-										VertexNameAndIDMap()
-										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='1955', '1309'='1956', '1310'='1957', '1311'='1958', '1312'='1959', '1313'='1960')
-											CloneEdges('1314'='1961', '1315'='1962', '1316'='1963', '1317'='1964', '1318'='1965', '1319'='1966', '1320'='1967', '1321'='1968', '1322'='1969', '1323'='1970', '1324'='1971', '1325'='1972')
-											CloneVertices('1326'='1973', '1327'='1974', '1328'='1975', '1329'='1976', '1330'='1977', '1331'='1978', '1332'='1979', '1333'='1980')
-										$end 'CloneFromOperationIdentityHelper'
-										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
-										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
-										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
-									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
-								$end 'Operation'
-							$end 'Operations'
-						$end 'GeometryPart'
-						$begin 'GeometryPart'
-							$begin 'Attributes'
-								Name='PrimaryFerrite1_12'
-								Flags=''
-								Color='(64 0 64)'
-								Transparency=0
-								PartCoordinateSystem=1
-								UDMId=-1
-								GroupId=-1
-								MaterialValue='"ferrite"'
-								SurfaceMaterialValue='""'
-								SolveInside=true
-								ShellElement=false
-								ShellElementThickness='0mm'
-								IsMaterialEditable=true
-								UseMaterialAppearance=false
-								IsLightweight=false
-								IsAlwaysHidden=false
-							$end 'Attributes'
-							$begin 'Operations'
-								$begin 'Operation'
-									OperationType='DuplicateBodyAlongLine'
-									ID=1981
-									$begin 'CloneFromParameters'
-										KernelVersion=13
-										SourceID=1307
-										WhichClone=11
-									$end 'CloneFromParameters'
-									ParentPartID=1982
-									ReferenceUDMID=-1
-									IsSuppressed=false
-									$begin 'OperationIdentity'
-										$begin 'Topology'
-											NumLumps=1
-											NumShells=1
-											NumFaces=6
-											NumWires=0
-											NumLoops=6
-											NumCoedges=24
-											NumEdges=12
-											NumVertices=8
-										$end 'Topology'
-										BodyID=1982
-										StartFaceID=1983
-										StartEdgeID=1989
-										StartVertexID=2001
-										NumNewFaces=6
-										NumNewEdges=12
-										NumNewVertices=8
-										FaceNameAndIDMap()
-										EdgeNameAndIDMap()
-										VertexNameAndIDMap()
-										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='1983', '1309'='1984', '1310'='1985', '1311'='1986', '1312'='1987', '1313'='1988')
-											CloneEdges('1314'='1989', '1315'='1990', '1316'='1991', '1317'='1992', '1318'='1993', '1319'='1994', '1320'='1995', '1321'='1996', '1322'='1997', '1323'='1998', '1324'='1999', '1325'='2000')
-											CloneVertices('1326'='2001', '1327'='2002', '1328'='2003', '1329'='2004', '1330'='2005', '1331'='2006', '1332'='2007', '1333'='2008')
-										$end 'CloneFromOperationIdentityHelper'
-										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
-										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
-										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
-									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
-								$end 'Operation'
-							$end 'Operations'
-						$end 'GeometryPart'
-						$begin 'GeometryPart'
-							$begin 'Attributes'
-								Name='PrimaryFerrite1_13'
-								Flags=''
-								Color='(64 0 64)'
-								Transparency=0
-								PartCoordinateSystem=1
-								UDMId=-1
-								GroupId=-1
-								MaterialValue='"ferrite"'
-								SurfaceMaterialValue='""'
-								SolveInside=true
-								ShellElement=false
-								ShellElementThickness='0mm'
-								IsMaterialEditable=true
-								UseMaterialAppearance=false
-								IsLightweight=false
-								IsAlwaysHidden=false
-							$end 'Attributes'
-							$begin 'Operations'
-								$begin 'Operation'
-									OperationType='DuplicateBodyAlongLine'
-									ID=2009
-									$begin 'CloneFromParameters'
-										KernelVersion=13
-										SourceID=1307
-										WhichClone=12
-									$end 'CloneFromParameters'
-									ParentPartID=2010
-									ReferenceUDMID=-1
-									IsSuppressed=false
-									$begin 'OperationIdentity'
-										$begin 'Topology'
-											NumLumps=1
-											NumShells=1
-											NumFaces=6
-											NumWires=0
-											NumLoops=6
-											NumCoedges=24
-											NumEdges=12
-											NumVertices=8
-										$end 'Topology'
-										BodyID=2010
-										StartFaceID=2011
-										StartEdgeID=2017
-										StartVertexID=2029
-										NumNewFaces=6
-										NumNewEdges=12
-										NumNewVertices=8
-										FaceNameAndIDMap()
-										EdgeNameAndIDMap()
-										VertexNameAndIDMap()
-										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='2011', '1309'='2012', '1310'='2013', '1311'='2014', '1312'='2015', '1313'='2016')
-											CloneEdges('1314'='2017', '1315'='2018', '1316'='2019', '1317'='2020', '1318'='2021', '1319'='2022', '1320'='2023', '1321'='2024', '1322'='2025', '1323'='2026', '1324'='2027', '1325'='2028')
-											CloneVertices('1326'='2029', '1327'='2030', '1328'='2031', '1329'='2032', '1330'='2033', '1331'='2034', '1332'='2035', '1333'='2036')
-										$end 'CloneFromOperationIdentityHelper'
-										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
-										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
-										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
-									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
-								$end 'Operation'
-							$end 'Operations'
-						$end 'GeometryPart'
-						$begin 'GeometryPart'
-							$begin 'Attributes'
-								Name='PrimaryFerrite1_14'
-								Flags=''
-								Color='(64 0 64)'
-								Transparency=0
-								PartCoordinateSystem=1
-								UDMId=-1
-								GroupId=-1
-								MaterialValue='"ferrite"'
-								SurfaceMaterialValue='""'
-								SolveInside=true
-								ShellElement=false
-								ShellElementThickness='0mm'
-								IsMaterialEditable=true
-								UseMaterialAppearance=false
-								IsLightweight=false
-								IsAlwaysHidden=false
-							$end 'Attributes'
-							$begin 'Operations'
-								$begin 'Operation'
-									OperationType='DuplicateBodyAlongLine'
-									ID=2037
-									$begin 'CloneFromParameters'
-										KernelVersion=13
-										SourceID=1307
-										WhichClone=13
-									$end 'CloneFromParameters'
-									ParentPartID=2038
-									ReferenceUDMID=-1
-									IsSuppressed=false
-									$begin 'OperationIdentity'
-										$begin 'Topology'
-											NumLumps=1
-											NumShells=1
-											NumFaces=6
-											NumWires=0
-											NumLoops=6
-											NumCoedges=24
-											NumEdges=12
-											NumVertices=8
-										$end 'Topology'
-										BodyID=2038
-										StartFaceID=2039
-										StartEdgeID=2045
-										StartVertexID=2057
-										NumNewFaces=6
-										NumNewEdges=12
-										NumNewVertices=8
-										FaceNameAndIDMap()
-										EdgeNameAndIDMap()
-										VertexNameAndIDMap()
-										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='2039', '1309'='2040', '1310'='2041', '1311'='2042', '1312'='2043', '1313'='2044')
-											CloneEdges('1314'='2045', '1315'='2046', '1316'='2047', '1317'='2048', '1318'='2049', '1319'='2050', '1320'='2051', '1321'='2052', '1322'='2053', '1323'='2054', '1324'='2055', '1325'='2056')
-											CloneVertices('1326'='2057', '1327'='2058', '1328'='2059', '1329'='2060', '1330'='2061', '1331'='2062', '1332'='2063', '1333'='2064')
-										$end 'CloneFromOperationIdentityHelper'
-										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
-										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
-										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
-									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
-								$end 'Operation'
-							$end 'Operations'
-						$end 'GeometryPart'
-						$begin 'GeometryPart'
-							$begin 'Attributes'
-								Name='PrimaryFerrite1_15'
-								Flags=''
-								Color='(64 0 64)'
-								Transparency=0
-								PartCoordinateSystem=1
-								UDMId=-1
-								GroupId=-1
-								MaterialValue='"ferrite"'
-								SurfaceMaterialValue='""'
-								SolveInside=true
-								ShellElement=false
-								ShellElementThickness='0mm'
-								IsMaterialEditable=true
-								UseMaterialAppearance=false
-								IsLightweight=false
-								IsAlwaysHidden=false
-							$end 'Attributes'
-							$begin 'Operations'
-								$begin 'Operation'
-									OperationType='DuplicateBodyAlongLine'
-									ID=2065
-									$begin 'CloneFromParameters'
-										KernelVersion=13
-										SourceID=1307
-										WhichClone=14
-									$end 'CloneFromParameters'
-									ParentPartID=2066
-									ReferenceUDMID=-1
-									IsSuppressed=false
-									$begin 'OperationIdentity'
-										$begin 'Topology'
-											NumLumps=1
-											NumShells=1
-											NumFaces=6
-											NumWires=0
-											NumLoops=6
-											NumCoedges=24
-											NumEdges=12
-											NumVertices=8
-										$end 'Topology'
-										BodyID=2066
-										StartFaceID=2067
-										StartEdgeID=2073
-										StartVertexID=2085
-										NumNewFaces=6
-										NumNewEdges=12
-										NumNewVertices=8
-										FaceNameAndIDMap()
-										EdgeNameAndIDMap()
-										VertexNameAndIDMap()
-										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='2067', '1309'='2068', '1310'='2069', '1311'='2070', '1312'='2071', '1313'='2072')
-											CloneEdges('1314'='2073', '1315'='2074', '1316'='2075', '1317'='2076', '1318'='2077', '1319'='2078', '1320'='2079', '1321'='2080', '1322'='2081', '1323'='2082', '1324'='2083', '1325'='2084')
-											CloneVertices('1326'='2085', '1327'='2086', '1328'='2087', '1329'='2088', '1330'='2089', '1331'='2090', '1332'='2091', '1333'='2092')
-										$end 'CloneFromOperationIdentityHelper'
-										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
-										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
-										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
-									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
-								$end 'Operation'
-							$end 'Operations'
-						$end 'GeometryPart'
-						$begin 'GeometryPart'
-							$begin 'Attributes'
-								Name='PrimaryFerrite1_16'
-								Flags=''
-								Color='(64 0 64)'
-								Transparency=0
-								PartCoordinateSystem=1
-								UDMId=-1
-								GroupId=-1
-								MaterialValue='"ferrite"'
-								SurfaceMaterialValue='""'
-								SolveInside=true
-								ShellElement=false
-								ShellElementThickness='0mm'
-								IsMaterialEditable=true
-								UseMaterialAppearance=false
-								IsLightweight=false
-								IsAlwaysHidden=false
-							$end 'Attributes'
-							$begin 'Operations'
-								$begin 'Operation'
-									OperationType='DuplicateBodyAlongLine'
-									ID=2093
-									$begin 'CloneFromParameters'
-										KernelVersion=13
-										SourceID=1307
-										WhichClone=15
-									$end 'CloneFromParameters'
-									ParentPartID=2094
-									ReferenceUDMID=-1
-									IsSuppressed=false
-									$begin 'OperationIdentity'
-										$begin 'Topology'
-											NumLumps=1
-											NumShells=1
-											NumFaces=6
-											NumWires=0
-											NumLoops=6
-											NumCoedges=24
-											NumEdges=12
-											NumVertices=8
-										$end 'Topology'
-										BodyID=2094
-										StartFaceID=2095
-										StartEdgeID=2101
-										StartVertexID=2113
-										NumNewFaces=6
-										NumNewEdges=12
-										NumNewVertices=8
-										FaceNameAndIDMap()
-										EdgeNameAndIDMap()
-										VertexNameAndIDMap()
-										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='2095', '1309'='2096', '1310'='2097', '1311'='2098', '1312'='2099', '1313'='2100')
-											CloneEdges('1314'='2101', '1315'='2102', '1316'='2103', '1317'='2104', '1318'='2105', '1319'='2106', '1320'='2107', '1321'='2108', '1322'='2109', '1323'='2110', '1324'='2111', '1325'='2112')
-											CloneVertices('1326'='2113', '1327'='2114', '1328'='2115', '1329'='2116', '1330'='2117', '1331'='2118', '1332'='2119', '1333'='2120')
-										$end 'CloneFromOperationIdentityHelper'
-										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
-										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
-										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
-									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
-								$end 'Operation'
-							$end 'Operations'
-						$end 'GeometryPart'
-						$begin 'GeometryPart'
-							$begin 'Attributes'
-								Name='PrimaryFerrite1_17'
-								Flags=''
-								Color='(64 0 64)'
-								Transparency=0
-								PartCoordinateSystem=1
-								UDMId=-1
-								GroupId=-1
-								MaterialValue='"ferrite"'
-								SurfaceMaterialValue='""'
-								SolveInside=true
-								ShellElement=false
-								ShellElementThickness='0mm'
-								IsMaterialEditable=true
-								UseMaterialAppearance=false
-								IsLightweight=false
-								IsAlwaysHidden=false
-							$end 'Attributes'
-							$begin 'Operations'
-								$begin 'Operation'
-									OperationType='DuplicateBodyAlongLine'
-									ID=2121
-									$begin 'CloneFromParameters'
-										KernelVersion=13
-										SourceID=1307
-										WhichClone=16
-									$end 'CloneFromParameters'
-									ParentPartID=2122
-									ReferenceUDMID=-1
-									IsSuppressed=false
-									$begin 'OperationIdentity'
-										$begin 'Topology'
-											NumLumps=1
-											NumShells=1
-											NumFaces=6
-											NumWires=0
-											NumLoops=6
-											NumCoedges=24
-											NumEdges=12
-											NumVertices=8
-										$end 'Topology'
-										BodyID=2122
-										StartFaceID=2123
-										StartEdgeID=2129
-										StartVertexID=2141
-										NumNewFaces=6
-										NumNewEdges=12
-										NumNewVertices=8
-										FaceNameAndIDMap()
-										EdgeNameAndIDMap()
-										VertexNameAndIDMap()
-										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='2123', '1309'='2124', '1310'='2125', '1311'='2126', '1312'='2127', '1313'='2128')
-											CloneEdges('1314'='2129', '1315'='2130', '1316'='2131', '1317'='2132', '1318'='2133', '1319'='2134', '1320'='2135', '1321'='2136', '1322'='2137', '1323'='2138', '1324'='2139', '1325'='2140')
-											CloneVertices('1326'='2141', '1327'='2142', '1328'='2143', '1329'='2144', '1330'='2145', '1331'='2146', '1332'='2147', '1333'='2148')
-										$end 'CloneFromOperationIdentityHelper'
-										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
-										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
-										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
-									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
-								$end 'Operation'
-							$end 'Operations'
-						$end 'GeometryPart'
-						$begin 'GeometryPart'
-							$begin 'Attributes'
-								Name='PrimaryFerrite1_18'
-								Flags=''
-								Color='(64 0 64)'
-								Transparency=0
-								PartCoordinateSystem=1
-								UDMId=-1
-								GroupId=-1
-								MaterialValue='"ferrite"'
-								SurfaceMaterialValue='""'
-								SolveInside=true
-								ShellElement=false
-								ShellElementThickness='0mm'
-								IsMaterialEditable=true
-								UseMaterialAppearance=false
-								IsLightweight=false
-								IsAlwaysHidden=false
-							$end 'Attributes'
-							$begin 'Operations'
-								$begin 'Operation'
-									OperationType='DuplicateBodyAlongLine'
-									ID=2149
-									$begin 'CloneFromParameters'
-										KernelVersion=13
-										SourceID=1307
-										WhichClone=17
-									$end 'CloneFromParameters'
-									ParentPartID=2150
-									ReferenceUDMID=-1
-									IsSuppressed=false
-									$begin 'OperationIdentity'
-										$begin 'Topology'
-											NumLumps=1
-											NumShells=1
-											NumFaces=6
-											NumWires=0
-											NumLoops=6
-											NumCoedges=24
-											NumEdges=12
-											NumVertices=8
-										$end 'Topology'
-										BodyID=2150
-										StartFaceID=2151
-										StartEdgeID=2157
-										StartVertexID=2169
-										NumNewFaces=6
-										NumNewEdges=12
-										NumNewVertices=8
-										FaceNameAndIDMap()
-										EdgeNameAndIDMap()
-										VertexNameAndIDMap()
-										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='2151', '1309'='2152', '1310'='2153', '1311'='2154', '1312'='2155', '1313'='2156')
-											CloneEdges('1314'='2157', '1315'='2158', '1316'='2159', '1317'='2160', '1318'='2161', '1319'='2162', '1320'='2163', '1321'='2164', '1322'='2165', '1323'='2166', '1324'='2167', '1325'='2168')
-											CloneVertices('1326'='2169', '1327'='2170', '1328'='2171', '1329'='2172', '1330'='2173', '1331'='2174', '1332'='2175', '1333'='2176')
-										$end 'CloneFromOperationIdentityHelper'
-										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
-										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
-										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
-									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
-								$end 'Operation'
-							$end 'Operations'
-						$end 'GeometryPart'
-						$begin 'GeometryPart'
-							$begin 'Attributes'
-								Name='PrimaryFerrite1_19'
-								Flags=''
-								Color='(64 0 64)'
-								Transparency=0
-								PartCoordinateSystem=1
-								UDMId=-1
-								GroupId=-1
-								MaterialValue='"ferrite"'
-								SurfaceMaterialValue='""'
-								SolveInside=true
-								ShellElement=false
-								ShellElementThickness='0mm'
-								IsMaterialEditable=true
-								UseMaterialAppearance=false
-								IsLightweight=false
-								IsAlwaysHidden=false
-							$end 'Attributes'
-							$begin 'Operations'
-								$begin 'Operation'
-									OperationType='DuplicateBodyAlongLine'
-									ID=2177
-									$begin 'CloneFromParameters'
-										KernelVersion=13
-										SourceID=1307
-										WhichClone=18
-									$end 'CloneFromParameters'
-									ParentPartID=2178
-									ReferenceUDMID=-1
-									IsSuppressed=false
-									$begin 'OperationIdentity'
-										$begin 'Topology'
-											NumLumps=1
-											NumShells=1
-											NumFaces=6
-											NumWires=0
-											NumLoops=6
-											NumCoedges=24
-											NumEdges=12
-											NumVertices=8
-										$end 'Topology'
-										BodyID=2178
-										StartFaceID=2179
-										StartEdgeID=2185
-										StartVertexID=2197
-										NumNewFaces=6
-										NumNewEdges=12
-										NumNewVertices=8
-										FaceNameAndIDMap()
-										EdgeNameAndIDMap()
-										VertexNameAndIDMap()
-										$begin 'CloneFromOperationIdentityHelper'
-											CloneFaces('1308'='2179', '1309'='2180', '1310'='2181', '1311'='2182', '1312'='2183', '1313'='2184')
-											CloneEdges('1314'='2185', '1315'='2186', '1316'='2187', '1317'='2188', '1318'='2189', '1319'='2190', '1320'='2191', '1321'='2192', '1322'='2193', '1323'='2194', '1324'='2195', '1325'='2196')
-											CloneVertices('1326'='2197', '1327'='2198', '1328'='2199', '1329'='2200', '1330'='2201', '1331'='2202', '1332'='2203', '1333'='2204')
-										$end 'CloneFromOperationIdentityHelper'
-										OriginalFaceIDs(1308, 1309, 1310, 1311, 1312, 1313)
-										OriginalEdgeIDs(1314, 1315, 1316, 1317, 1318, 1319, 1320, 1321, 1322, 1323, 1324, 1325)
-										OriginalVertexIDs(1326, 1327, 1328, 1329, 1330, 1331, 1332, 1333)
-									$end 'OperationIdentity'
-									PlaceHolderOpnId=1672
+									PlaceHolderOpnId=2205
 								$end 'Operation'
 							$end 'Operations'
 						$end 'GeometryPart'
@@ -4326,7 +3676,7 @@ $begin 'AnsoftProject'
 							primaryferrite(1)
 						$end 'primaryferrite'
 						$begin 'primaryferrite1_'
-							primaryferrite1_(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19)
+							primaryferrite1_(1, 2, 3, 4, 5, 6, 7, 8, 9)
 						$end 'primaryferrite1_'
 						$begin 'region'
 							region(-1)
@@ -4465,121 +3815,61 @@ $begin 'AnsoftProject'
 					$end 'DependencyInformation'
 					$begin 'DependencyInformation'
 						NumParents=1
-						DependencyObject('GeometryOperation', 1672)
+						DependencyObject('GeometryOperation', 2205)
 						DependencyObject('CoordinateSystem', 1)
 					$end 'DependencyInformation'
 					$begin 'DependencyInformation'
 						NumParents=2
-						DependencyObject('GeometryBodyOperation', 1673)
-						DependencyObject('GeometryOperation', 1672)
+						DependencyObject('GeometryBodyOperation', 2206)
+						DependencyObject('GeometryOperation', 2205)
 						DependencyObject('GeometryBodyOperation', 1306)
 					$end 'DependencyInformation'
 					$begin 'DependencyInformation'
 						NumParents=2
-						DependencyObject('GeometryBodyOperation', 1701)
-						DependencyObject('GeometryOperation', 1672)
+						DependencyObject('GeometryBodyOperation', 2234)
+						DependencyObject('GeometryOperation', 2205)
 						DependencyObject('GeometryBodyOperation', 1306)
 					$end 'DependencyInformation'
 					$begin 'DependencyInformation'
 						NumParents=2
-						DependencyObject('GeometryBodyOperation', 1729)
-						DependencyObject('GeometryOperation', 1672)
+						DependencyObject('GeometryBodyOperation', 2262)
+						DependencyObject('GeometryOperation', 2205)
 						DependencyObject('GeometryBodyOperation', 1306)
 					$end 'DependencyInformation'
 					$begin 'DependencyInformation'
 						NumParents=2
-						DependencyObject('GeometryBodyOperation', 1757)
-						DependencyObject('GeometryOperation', 1672)
+						DependencyObject('GeometryBodyOperation', 2290)
+						DependencyObject('GeometryOperation', 2205)
 						DependencyObject('GeometryBodyOperation', 1306)
 					$end 'DependencyInformation'
 					$begin 'DependencyInformation'
 						NumParents=2
-						DependencyObject('GeometryBodyOperation', 1785)
-						DependencyObject('GeometryOperation', 1672)
+						DependencyObject('GeometryBodyOperation', 2318)
+						DependencyObject('GeometryOperation', 2205)
 						DependencyObject('GeometryBodyOperation', 1306)
 					$end 'DependencyInformation'
 					$begin 'DependencyInformation'
 						NumParents=2
-						DependencyObject('GeometryBodyOperation', 1813)
-						DependencyObject('GeometryOperation', 1672)
+						DependencyObject('GeometryBodyOperation', 2346)
+						DependencyObject('GeometryOperation', 2205)
 						DependencyObject('GeometryBodyOperation', 1306)
 					$end 'DependencyInformation'
 					$begin 'DependencyInformation'
 						NumParents=2
-						DependencyObject('GeometryBodyOperation', 1841)
-						DependencyObject('GeometryOperation', 1672)
+						DependencyObject('GeometryBodyOperation', 2374)
+						DependencyObject('GeometryOperation', 2205)
 						DependencyObject('GeometryBodyOperation', 1306)
 					$end 'DependencyInformation'
 					$begin 'DependencyInformation'
 						NumParents=2
-						DependencyObject('GeometryBodyOperation', 1869)
-						DependencyObject('GeometryOperation', 1672)
+						DependencyObject('GeometryBodyOperation', 2402)
+						DependencyObject('GeometryOperation', 2205)
 						DependencyObject('GeometryBodyOperation', 1306)
 					$end 'DependencyInformation'
 					$begin 'DependencyInformation'
 						NumParents=2
-						DependencyObject('GeometryBodyOperation', 1897)
-						DependencyObject('GeometryOperation', 1672)
-						DependencyObject('GeometryBodyOperation', 1306)
-					$end 'DependencyInformation'
-					$begin 'DependencyInformation'
-						NumParents=2
-						DependencyObject('GeometryBodyOperation', 1925)
-						DependencyObject('GeometryOperation', 1672)
-						DependencyObject('GeometryBodyOperation', 1306)
-					$end 'DependencyInformation'
-					$begin 'DependencyInformation'
-						NumParents=2
-						DependencyObject('GeometryBodyOperation', 1953)
-						DependencyObject('GeometryOperation', 1672)
-						DependencyObject('GeometryBodyOperation', 1306)
-					$end 'DependencyInformation'
-					$begin 'DependencyInformation'
-						NumParents=2
-						DependencyObject('GeometryBodyOperation', 1981)
-						DependencyObject('GeometryOperation', 1672)
-						DependencyObject('GeometryBodyOperation', 1306)
-					$end 'DependencyInformation'
-					$begin 'DependencyInformation'
-						NumParents=2
-						DependencyObject('GeometryBodyOperation', 2009)
-						DependencyObject('GeometryOperation', 1672)
-						DependencyObject('GeometryBodyOperation', 1306)
-					$end 'DependencyInformation'
-					$begin 'DependencyInformation'
-						NumParents=2
-						DependencyObject('GeometryBodyOperation', 2037)
-						DependencyObject('GeometryOperation', 1672)
-						DependencyObject('GeometryBodyOperation', 1306)
-					$end 'DependencyInformation'
-					$begin 'DependencyInformation'
-						NumParents=2
-						DependencyObject('GeometryBodyOperation', 2065)
-						DependencyObject('GeometryOperation', 1672)
-						DependencyObject('GeometryBodyOperation', 1306)
-					$end 'DependencyInformation'
-					$begin 'DependencyInformation'
-						NumParents=2
-						DependencyObject('GeometryBodyOperation', 2093)
-						DependencyObject('GeometryOperation', 1672)
-						DependencyObject('GeometryBodyOperation', 1306)
-					$end 'DependencyInformation'
-					$begin 'DependencyInformation'
-						NumParents=2
-						DependencyObject('GeometryBodyOperation', 2121)
-						DependencyObject('GeometryOperation', 1672)
-						DependencyObject('GeometryBodyOperation', 1306)
-					$end 'DependencyInformation'
-					$begin 'DependencyInformation'
-						NumParents=2
-						DependencyObject('GeometryBodyOperation', 2149)
-						DependencyObject('GeometryOperation', 1672)
-						DependencyObject('GeometryBodyOperation', 1306)
-					$end 'DependencyInformation'
-					$begin 'DependencyInformation'
-						NumParents=2
-						DependencyObject('GeometryBodyOperation', 2177)
-						DependencyObject('GeometryOperation', 1672)
+						DependencyObject('GeometryBodyOperation', 2430)
+						DependencyObject('GeometryOperation', 2205)
 						DependencyObject('GeometryBodyOperation', 1306)
 					$end 'DependencyInformation'
 					$begin 'DependencyInformation'
@@ -4699,7 +3989,7 @@ $begin 'AnsoftProject'
 					IsComponent=false
 					Objects(347)
 					ParentBndID=11
-					'Conductor number'='5'
+					'Conductor number'='10'
 					Winding=11
 					'Point out of terminal'=false
 				$end 'LstTerminal'
@@ -5036,14 +4326,14 @@ $begin 'AnsoftProject'
 						$end 'Goal'
 					$end 'Goals'
 				$end 'SecondaryOffset'
-				$begin 'ParametricSetup1'
+				$begin 'SecondaryCoilLength'
 					ID=13
 					SetupType='OptiParametric'
 					IsEnabled=true
-					NextUniqueID=1
+					NextUniqueID=2
 					MoveBackwards=false
 					GoalSetupVersion=0
-					Version=0
+					Version=1
 					$begin 'ProdOptiSetupDataV2'
 						SaveFields=false
 						CopyMesh=false
@@ -5056,6 +4346,12 @@ $begin 'AnsoftProject'
 						$begin 'SweepDefinition'
 							Variable='SCLength'
 							Data='LIN 21.5mm 81.5mm 10mm'
+							OffsetF1=false
+							Synchronize=0
+						$end 'SweepDefinition'
+						$begin 'SweepDefinition'
+							Variable='secondaryYOffset'
+							Data='LIN 0mm 50mm 50mm'
 							OffsetF1=false
 							Synchronize=0
 						$end 'SweepDefinition'
@@ -5124,7 +4420,7 @@ $begin 'AnsoftProject'
 							$end 'Ranges'
 						$end 'Goal'
 					$end 'Goals'
-				$end 'ParametricSetup1'
+				$end 'SecondaryCoilLength'
 			$end 'OptimetricsSetups'
 		$end 'Optimetrics'
 		$begin 'Solutions'
@@ -5326,7 +4622,7 @@ $begin 'AnsoftProject'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='secondaryYOffset'
-								Column='0mm;25mm;50mm'
+								Column='0mm'
 								Units='mm'
 							$end 'Sweep'
 							$begin 'Sweep'
@@ -5376,7 +4672,7 @@ $begin 'AnsoftProject'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='FirstFerritePosition'
-								Column='-500mm'
+								Column='-450mm'
 								Units='mm'
 							$end 'Sweep'
 							$begin 'Sweep'
@@ -5389,12 +4685,12 @@ $begin 'AnsoftProject'
 				$end 'Solution'
 			$end 'SimSetup'
 			$begin 'Version ID Map'
-				V=1210
+				V=1265
 				$begin 'Setup'
 					N='Setup1'
-					V=1210
-					Soln(N='AdaptivePass', V=1210)
-					Soln(N='LastAdaptive', V=1210)
+					V=1265
+					Soln(N='AdaptivePass', V=1265)
+					Soln(N='LastAdaptive', V=1265)
 				$end 'Setup'
 			$end 'Version ID Map'
 			$begin 'ID Map'
@@ -5445,7 +4741,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=2
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(3, -1, -1, -8, -31, 26, 26, 1507, 381), OrientationMatrix(0.000578914768993855, -0.000399419193854555, 0.000956972478888929, 0, 0.00103223789483309, 0.000117299176054075, -0.000575480575207621, 0, 9.90295884548686e-05, 0.00111228274181485, 0.000404326478019357, 0, -0.484660059213638, 0.226587980985641, -6.42684602737427, 1, 0, -2.54596924781799, 0.965025842189789, -0.502902209758759, 0.776877343654633, 3.3207106590271, 9.52841186523438), Drawings[29: 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7', 'PrimaryFerrite1_8', 'PrimaryFerrite1_9', 'PrimaryFerrite1_10', 'PrimaryFerrite1_11', 'PrimaryFerrite1_12', 'PrimaryFerrite1_13', 'PrimaryFerrite1_14', 'PrimaryFerrite1_15', 'PrimaryFerrite1_16', 'PrimaryFerrite1_17', 'PrimaryFerrite1_18', 'PrimaryFerrite1_19', 'Lst'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=50, dYForGrid=50, dZForGrid=50, dRForGrid=50, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(3, -1, -1, -8, -31, 26, 26, 1507, 381), OrientationMatrix(0.0010670725023374, 0.000327302928781137, -0.000405783794121817, 0, -0.000521321082487702, 0.000661789497826248, -0.00083709234604612, 0, -4.56688303529518e-06, 0.000930250913370401, 0.000738280708901584, 0, -0.467896372079849, 0.162994340062141, -6.26553392410278, 1, 0, -1.09898376464844, 0.154146105051041, -0.0363309681415558, 0.420442819595337, 3.15755772590637, 9.36516857147217), Drawings[19: 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'Lst', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7', 'PrimaryFerrite1_8', 'PrimaryFerrite1_9'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=20, dYForGrid=20, dZForGrid=20, dRForGrid=20, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -5467,7 +4763,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=22
-									VersionID=41
+									VersionID=44
 									Name='K'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -5658,7 +4954,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=24
-									VersionID=42
+									VersionID=45
 									Name='Lst'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -5849,7 +5145,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=26
-									VersionID=43
+									VersionID=46
 									Name='Lpt'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -6028,7 +5324,7 @@ $begin 'AnsoftProject'
 						NextUniqueID=28
 						MoveBackwards=false
 						$begin 'NextVersID'
-							NextUniqueID=44
+							NextUniqueID=47
 							MoveBackwards=false
 						$end 'NextVersID'
 					$end 'ReportManager'
@@ -10614,114 +9910,112 @@ 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\
-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\
-g9rqKTt20XkvuCiiitDQKKKKAP//Z'
+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\
+iiitDUKKKKACiiigAooooA//9k='
 	$begin 'DesignInfo'
 		DesignName='DoubleDCoilWithFerriteBars'
 		Notes=''
 		Factory='Maxwell 3D'
-		IsSolved=true
+		IsSolved=false
 		'Nominal Setups'[1: 'Setup1']
 		'Nominal Setup Types'[1: '']
-		'Optimetrics Setups'[3: 'SecondaryOffsetAndCuttoutWidth', 'SecondaryOffset', 'ParametricSetup1']
+		'Optimetrics Setups'[3: 'SecondaryOffsetAndCuttoutWidth', 'SecondaryOffset', 'SecondaryCoilLength']
 		'Optimetrics Experiment Types'[3: 0, 0, 0]
 		Image64='/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQE\
 BAQICAQECAQEBAgICAgICAgICAQICAgICAgICAgL/2wBDAQEBAQEBAQEBAQECAQEBAgICAgICAgICAg\
@@ -10734,235 +10028,259 @@ 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\
-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\
-CiiigD//2Q=='
+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\
+2t3M11qervEmrT638P9U1WZ5G1rxHo+l6ba3treXksepazpF9K8kep3nh7xBrd16jXOeLPDFh4w0OfQ\
+9RmvLVHvNI1Wyv8AT5IY7/Sdc8O6xYeIvDmt2P2u3mt5ryx8QaVpl3FFdQXNnM9ksV5a3Vq81vJnOLd\
+pw+OP4r+V+vR9HZ2aunnUi3acP4kfukv5X5Po+js7NXT4X9n7/kgvwS/7JF8Nv/UN0Wuv8VePvBfgj7\
+AnivxNpGi3mr/ak0HSbq7jbXvEtzZ/ZxNp3hXw9AXvvFOrmW8soo7LTre5u5pr+CCGGSaeJH8t8H/A2\
+/0fwj4W8I+LPil468Q6X4U8OaJ4d0/SfCd/N8KdDhTw3plroelanBd+CLuLxJLeNpNpm8t73xLfabcX\
+l9cXUdhbqmnwaf6l4V8A+C/BH29/CnhnSNFvNX+yvr2rWtpG2veJbmz+0GHUfFXiGcPfeKdXMt5eyyX\
+uo3FzdzTX88800k08rvjRVdUqUORU3GMU3J3aaSv7sdGunxrvboYUFiFRo0/Zqk4Rim5PmaaST92OjT\
+2T9ou9uj5D/hZeva9+6+H3wz8X6zv/AHS6948tL34R+FLK9i/f3VlqsPi/TP8AhKP+PHyzBdad4V1Ow\
+mubyG2a7i8vUJbA/wCEU+K2vf6R4g+Kf/CGf8trTR/hX4X8N/6F9q/eXGm694k+J2k+IP8AhLvsuyGK\
+1vrHSvDPnf6RPc6f/pFvbWHrtFaeycv4lWUn2T5EvTltL/wKUjX2Ll/Eqyk+0W4JenK1K3lKUjznQfh\
+N8P8Aw9q1p4httA/tbxRp/nppvi/xhqut+PfGmlW1zbTWk2naT4y8calqOqaVpBgur4fYre7jtA2pXb\
+rCHu7lpfRqKK0jCEFaEFBPokl+RcKcKa5acFBPWySSv8vQKKKKosKKKKACiiigAooooAKKKKACiiigA\
+ooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiig\
+AooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigD//Z'
 	$end 'DesignInfo'
 $end 'ProjectPreview'
