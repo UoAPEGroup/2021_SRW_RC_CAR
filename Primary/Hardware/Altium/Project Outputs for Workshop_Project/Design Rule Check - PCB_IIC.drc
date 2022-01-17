@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
-PCB File : C:\Users\5u3a1\Desktop\2021_SRW_RC_CAR\Primary\Hardware\Altium\PCB_IIC.PcbDoc
-Date     : 17/01/2022
-Time     : 10:21:25 PM
+PCB File : H:\Documents\2021_SRW_RC_CAR\Primary\Hardware\Altium\PCB_IIC.PcbDoc
+Date     : 18/01/2022
+Time     : 11:37:11 am
 
 Processing Rule : Clearance Constraint (Gap=5mil) (All),(All)
 Rule Violations :0
@@ -51,4 +51,4 @@ Rule Violations :0
 
 Violations Detected : 0
 Waived Violations : 0
-Time Elapsed        : 00:00:03
+Time Elapsed        : 00:00:01
