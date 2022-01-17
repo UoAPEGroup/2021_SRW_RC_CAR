@@ -4383,8 +4383,6 @@ $begin 'AnsoftProject'
 			$begin 'PlotDefaults'
 				Default_SolutionId=828
 				Default_PlotFolder='Automatic'
-				Default_Phase='0deg'
-				Default_Freq='10kHz'
 			$end 'PlotDefaults'
 			$begin 'FieldsPlotManagerID'
 				NextUniqueID=4
@@ -4417,9 +4415,6 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1558, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1559, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1560, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -4467,96 +4462,6 @@ $begin 'AnsoftProject'
 								Column='10kHz'
 								Units='kHz'
 							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FerriteCoilGap'
-								Column='3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SCLength'
-								Column='81.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteWidth'
-								Column='15mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteHeight'
-								Column='8mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerrriteOffset'
-								Column='25mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='N2'
-								Column='5;10;15'
-								Units=''
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I2'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='secondaryYOffset'
-								Column='0mm;25mm;50mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteLength'
-								Column='108mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutOffset'
-								Column='128.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutWidth'
-								Column='94.2mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryCoilThickness'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCoilWidth'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumThickness'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumFerriteGap'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FirstFerritePosition'
-								Column='-450mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryXOffset'
-								Column='32mm'
-								Units='mm'
-							$end 'Sweep'
 						$end 'Sweeps'
 					$end 'SimDataExtractor'
 				$end 'Solution'
@@ -4569,19 +4474,6 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1509, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1510, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1511, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('Matrix1.CplCoef(Lpt1,Lpt1)', 1, 90, false, SimValueID=1512, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0, 'ParameterIndex', false, '0', 'PC', false, '1001')
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1513, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1514, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1515, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1553, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1554, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1555, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1556, 3, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Matrix1.CplCoef(Lpt1,Lpt1)', 1, 90, false, SimValueID=1598, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '-1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1599, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '-1', 'ParameterIndex', false, '1', 'PC', false, '1001')
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -4624,96 +4516,6 @@ $begin 'AnsoftProject'
 								Column='10kHz'
 								Units='kHz'
 							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FerriteCoilGap'
-								Column='3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SCLength'
-								Column='81.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteWidth'
-								Column='15mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteHeight'
-								Column='8mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerrriteOffset'
-								Column='25mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='N2'
-								Column='5;10;15'
-								Units=''
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I2'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='secondaryYOffset'
-								Column='0mm;25mm;50mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteLength'
-								Column='108mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutOffset'
-								Column='128.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutWidth'
-								Column='94.2mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryCoilThickness'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCoilWidth'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumThickness'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumFerriteGap'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FirstFerritePosition'
-								Column='-450mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryXOffset'
-								Column='32mm'
-								Units='mm'
-							$end 'Sweep'
 						$end 'Sweeps'
 					$end 'SimDataExtractor'
 				$end 'Solution'
@@ -4748,7 +4550,7 @@ $begin 'AnsoftProject'
 		Notes=$begin_cdata$ $end_cdata$
 		$begin 'AnimationSetups'
 		$end 'AnimationSetups'
-		CacheHeaderFile='HDR553573216422038184.tmp'
+		CacheHeaderFile='HDR5B681225616424513913.tmp'
 	$end 'Maxwell3DModel'
 	$begin 'Maxwell3DModel'
 		RepRewriteV2=true
@@ -4798,7 +4600,7 @@ $begin 'AnsoftProject'
 				VariableProp('SecondaryFerriteLength', 'UD', 'Y length of the secondary Ferrite', '108mm')
 				VariableProp('PrimaryCuttoutOffset', 'UD', 'Y offset of the hole in the Primary coil. This is mirrored on either side', '128.5mm')
 				VariableProp('PrimaryCuttoutWidth', 'UD', 'Y Width of the holes in the Primary coil', '94.2mm')
-				VariableProp('I', 'UD', 'Current through the Primary Coil', '1*sqrt(2) A')
+				VariableProp('I', 'UD', 'Current through the Primary Coil', '7.5*sqrt(2) A')
 				VariableProp('SecondaryCoilThickness', 'UD', 'Thickness of the secondary coil, It is bigger by this dimension on each side in the X and Z axis', '4.3mm')
 				VariableProp('PrimaryCoilWidth', 'UD', '', '4.3mm')
 				VariableProp('AluminumThickness', 'UD', '', '5mm')
@@ -4824,7 +4626,7 @@ $begin 'AnsoftProject'
 			WorkingCS=2458
 			$begin 'GeometryCore'
 				BlockVersionID=3
-				DataVersion=66
+				DataVersion=67
 				NativeKernel='ACIS'
 				NativeKernelVersionID=13
 				Units='mm'
@@ -6092,17 +5894,17 @@ $begin 'AnsoftProject'
 													$begin 'FaceGeomTopol'
 														FaceTopol(2, 8, 8, 8)
 														$begin 'FaceGeometry'
-															Area=65220
+															Area=59850.6
 															FcUVMid(0, 75, 4.3)
 															$begin 'FcTolVts'
 																TolVt(-500, 0, 4.3, 0)
 																TolVt(500, 0, 4.3, 0)
 																TolVt(500, 150, 4.3, 0)
 																TolVt(-500, 150, 4.3, 0)
-																TolVt(-450, 128.5, 4.3, 0)
-																TolVt(450, 128.5, 4.3, 0)
-																TolVt(450, 34.3, 4.3, 0)
-																TolVt(-450, 34.3, 4.3, 0)
+																TolVt(-479.5, 128.5, 4.3, 0)
+																TolVt(477.5, 128.5, 4.3, 0)
+																TolVt(477.5, 34.3, 4.3, 0)
+																TolVt(-479.5, 34.3, 4.3, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -6130,17 +5932,17 @@ $begin 'AnsoftProject'
 													$begin 'FaceGeomTopol'
 														FaceTopol(2, 8, 8, 8)
 														$begin 'FaceGeometry'
-															Area=65220
+															Area=59850.6
 															FcUVMid(0, 75, 0)
 															$begin 'FcTolVts'
 																TolVt(500, 0, 0, 0)
 																TolVt(-500, 0, 0, 0)
 																TolVt(-500, 150, 0, 0)
 																TolVt(500, 150, 0, 0)
-																TolVt(450, 128.5, 0, 0)
-																TolVt(-450, 128.5, 0, 0)
-																TolVt(-450, 34.3, 0, 0)
-																TolVt(450, 34.3, 0, 0)
+																TolVt(477.5, 128.5, 0, 0)
+																TolVt(-479.5, 128.5, 0, 0)
+																TolVt(-479.5, 34.3, 0, 0)
+																TolVt(477.5, 34.3, 0, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -7232,13 +7034,13 @@ $begin 'AnsoftProject'
 													$begin 'FaceGeomTopol'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
-															Area=3870
-															FcUVMid(0, -128.5, 2.15)
+															Area=4115.1
+															FcUVMid(-1, -128.5, 2.15)
 															$begin 'FcTolVts'
-																TolVt(-450, -128.5, 0, 0)
-																TolVt(-450, -128.5, 4.3, 0)
-																TolVt(450, -128.5, 4.3, 0)
-																TolVt(450, -128.5, 0, 0)
+																TolVt(-479.5, -128.5, 0, 0)
+																TolVt(-479.5, -128.5, 4.3, 0)
+																TolVt(477.5, -128.5, 4.3, 0)
+																TolVt(477.5, -128.5, 0, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -7250,12 +7052,12 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
 															Area=405.06
-															FcUVMid(-450, -81.4, 2.15)
+															FcUVMid(-479.5, -81.4, 2.15)
 															$begin 'FcTolVts'
-																TolVt(-450, -34.3, 0, 0)
-																TolVt(-450, -34.3, 4.3, 0)
-																TolVt(-450, -128.5, 4.3, 0)
-																TolVt(-450, -128.5, 0, 0)
+																TolVt(-479.5, -34.3, 0, 0)
+																TolVt(-479.5, -34.3, 4.3, 0)
+																TolVt(-479.5, -128.5, 4.3, 0)
+																TolVt(-479.5, -128.5, 0, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -7266,13 +7068,13 @@ $begin 'AnsoftProject'
 													$begin 'FaceGeomTopol'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
-															Area=3870
-															FcUVMid(0, -34.3, 2.15)
+															Area=4115.1
+															FcUVMid(-1, -34.3, 2.15)
 															$begin 'FcTolVts'
-																TolVt(450, -34.3, 0, 0)
-																TolVt(450, -34.3, 4.3, 0)
-																TolVt(-450, -34.3, 4.3, 0)
-																TolVt(-450, -34.3, 0, 0)
+																TolVt(477.5, -34.3, 0, 0)
+																TolVt(477.5, -34.3, 4.3, 0)
+																TolVt(-479.5, -34.3, 4.3, 0)
+																TolVt(-479.5, -34.3, 0, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -7284,12 +7086,12 @@ $begin 'AnsoftProject'
 														FaceTopol(1, 4, 4, 4)
 														$begin 'FaceGeometry'
 															Area=405.06
-															FcUVMid(450, -81.4, 2.15)
+															FcUVMid(477.5, -81.4, 2.15)
 															$begin 'FcTolVts'
-																TolVt(450, -128.5, 0, 0)
-																TolVt(450, -128.5, 4.3, 0)
-																TolVt(450, -34.3, 4.3, 0)
-																TolVt(450, -34.3, 0, 0)
+																TolVt(477.5, -128.5, 0, 0)
+																TolVt(477.5, -128.5, 4.3, 0)
+																TolVt(477.5, -34.3, 4.3, 0)
+																TolVt(477.5, -34.3, 0, 0)
 															$end 'FcTolVts'
 														$end 'FaceGeometry'
 													$end 'FaceGeomTopol'
@@ -7301,162 +7103,162 @@ $begin 'AnsoftProject'
 													ID=828
 													EdgeFaces(824, 825)
 													$begin 'EdTolVts'
-														TolVt(-450, -128.5, 4.3, 0)
-														TolVt(-450, -128.5, 0, 0)
+														TolVt(-479.5, -128.5, 4.3, 0)
+														TolVt(-479.5, -128.5, 0, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(-450, -128.5, 2.15)
+													EdgeMidPoint(-479.5, -128.5, 2.15)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=1
 													ID=829
 													EdgeFaces(767, 824)
 													$begin 'EdTolVts'
-														TolVt(450, -128.5, 4.3, 0)
-														TolVt(-450, -128.5, 4.3, 0)
+														TolVt(477.5, -128.5, 4.3, 0)
+														TolVt(-479.5, -128.5, 4.3, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(0, -128.5, 4.3)
+													EdgeMidPoint(-1, -128.5, 4.3)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=2
 													ID=830
 													EdgeFaces(824, 827)
 													$begin 'EdTolVts'
-														TolVt(450, -128.5, 4.3, 0)
-														TolVt(450, -128.5, 0, 0)
+														TolVt(477.5, -128.5, 4.3, 0)
+														TolVt(477.5, -128.5, 0, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(450, -128.5, 2.15)
+													EdgeMidPoint(477.5, -128.5, 2.15)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=3
 													ID=831
 													EdgeFaces(768, 824)
 													$begin 'EdTolVts'
-														TolVt(-450, -128.5, 0, 0)
-														TolVt(450, -128.5, 0, 0)
+														TolVt(-479.5, -128.5, 0, 0)
+														TolVt(477.5, -128.5, 0, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(0, -128.5, 0)
+													EdgeMidPoint(-1, -128.5, 0)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=4
 													ID=832
 													EdgeFaces(825, 826)
 													$begin 'EdTolVts'
-														TolVt(-450, -34.3, 4.3, 0)
-														TolVt(-450, -34.3, 0, 0)
+														TolVt(-479.5, -34.3, 4.3, 0)
+														TolVt(-479.5, -34.3, 0, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(-450, -34.3, 2.15)
+													EdgeMidPoint(-479.5, -34.3, 2.15)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=5
 													ID=833
 													EdgeFaces(767, 825)
 													$begin 'EdTolVts'
-														TolVt(-450, -128.5, 4.3, 0)
-														TolVt(-450, -34.3, 4.3, 0)
+														TolVt(-479.5, -128.5, 4.3, 0)
+														TolVt(-479.5, -34.3, 4.3, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(-450, -81.4, 4.3)
+													EdgeMidPoint(-479.5, -81.4, 4.3)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=6
 													ID=834
 													EdgeFaces(768, 825)
 													$begin 'EdTolVts'
-														TolVt(-450, -34.3, 0, 0)
-														TolVt(-450, -128.5, 0, 0)
+														TolVt(-479.5, -34.3, 0, 0)
+														TolVt(-479.5, -128.5, 0, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(-450, -81.4, 0)
+													EdgeMidPoint(-479.5, -81.4, 0)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=7
 													ID=835
 													EdgeFaces(826, 827)
 													$begin 'EdTolVts'
-														TolVt(450, -34.3, 4.3, 0)
-														TolVt(450, -34.3, 0, 0)
+														TolVt(477.5, -34.3, 4.3, 0)
+														TolVt(477.5, -34.3, 0, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(450, -34.3, 2.15)
+													EdgeMidPoint(477.5, -34.3, 2.15)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=8
 													ID=836
 													EdgeFaces(767, 826)
 													$begin 'EdTolVts'
-														TolVt(-450, -34.3, 4.3, 0)
-														TolVt(450, -34.3, 4.3, 0)
+														TolVt(-479.5, -34.3, 4.3, 0)
+														TolVt(477.5, -34.3, 4.3, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(0, -34.3, 4.3)
+													EdgeMidPoint(-1, -34.3, 4.3)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=9
 													ID=837
 													EdgeFaces(768, 826)
 													$begin 'EdTolVts'
-														TolVt(450, -34.3, 0, 0)
-														TolVt(-450, -34.3, 0, 0)
+														TolVt(477.5, -34.3, 0, 0)
+														TolVt(-479.5, -34.3, 0, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(0, -34.3, 0)
+													EdgeMidPoint(-1, -34.3, 0)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=10
 													ID=838
 													EdgeFaces(767, 827)
 													$begin 'EdTolVts'
-														TolVt(450, -34.3, 4.3, 0)
-														TolVt(450, -128.5, 4.3, 0)
+														TolVt(477.5, -34.3, 4.3, 0)
+														TolVt(477.5, -128.5, 4.3, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(450, -81.4, 4.3)
+													EdgeMidPoint(477.5, -81.4, 4.3)
 												$end 'Edge'
 												$begin 'Edge'
 													NormalizedSerialNum=11
 													ID=839
 													EdgeFaces(768, 827)
 													$begin 'EdTolVts'
-														TolVt(450, -128.5, 0, 0)
-														TolVt(450, -34.3, 0, 0)
+														TolVt(477.5, -128.5, 0, 0)
+														TolVt(477.5, -34.3, 0, 0)
 													$end 'EdTolVts'
-													EdgeMidPoint(450, -81.4, 0)
+													EdgeMidPoint(477.5, -81.4, 0)
 												$end 'Edge'
 											$end 'NewEdges'
 											$begin 'NewVertices'
 												$begin 'Vertex'
 													NormalizedSerialNum=0
 													ID=840
-													VtPos(-450, -128.5, 0)
+													VtPos(-479.5, -128.5, 0)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=1
 													ID=841
-													VtPos(-450, -128.5, 4.3)
+													VtPos(-479.5, -128.5, 4.3)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=2
 													ID=842
-													VtPos(450, -128.5, 4.3)
+													VtPos(477.5, -128.5, 4.3)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=3
 													ID=843
-													VtPos(450, -128.5, 0)
+													VtPos(477.5, -128.5, 0)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=4
 													ID=844
-													VtPos(-450, -34.3, 0)
+													VtPos(-479.5, -34.3, 0)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=5
 													ID=845
-													VtPos(-450, -34.3, 4.3)
+													VtPos(-479.5, -34.3, 4.3)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=6
 													ID=846
-													VtPos(450, -34.3, 0)
+													VtPos(477.5, -34.3, 0)
 												$end 'Vertex'
 												$begin 'Vertex'
 													NormalizedSerialNum=7
 													ID=847
-													VtPos(450, -34.3, 4.3)
+													VtPos(477.5, -34.3, 4.3)
 												$end 'Vertex'
 											$end 'NewVertices'
 										$end 'GeomTopolBasedOperationIdentityHelper'
@@ -7512,10 +7314,10 @@ $begin 'AnsoftProject'
 									ReferenceCoordSystemID=1
 									$begin 'BoxParameters'
 										KernelVersion=13
-										XPosition='-450mm'
+										XPosition='-479.5mm'
 										YPosition='-PrimaryCuttoutOffset'
 										ZPosition='0mm'
-										XSize='900mm'
+										XSize='957mm'
 										YSize='PrimaryCuttoutWidth'
 										ZSize='PrimaryCoilWidth'
 									$end 'BoxParameters'
@@ -8725,9 +8527,9 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1636, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1637, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1638, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
+						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1674, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
+						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1675, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
+						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1676, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -8772,98 +8574,8 @@ $begin 'AnsoftProject'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='Freq'
-								Column='10kHz'
-								Units='kHz'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FerriteCoilGap'
-								Column='3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SCLength'
-								Column='81.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteWidth'
-								Column='15mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteHeight'
-								Column='8mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerrriteOffset'
-								Column='25mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='N2'
-								Column='10'
-								Units=''
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I2'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='secondaryYOffset'
-								Column='0mm;25mm;50mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteLength'
-								Column='108mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutOffset'
-								Column='128.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutWidth'
-								Column='94.2mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryCoilThickness'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCoilWidth'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumThickness'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumFerriteGap'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FirstFerritePosition'
-								Column='-450mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryXOffset'
-								Column='0mm'
-								Units='mm'
+								Column='1e-05GHz'
+								Units='GHz'
 							$end 'Sweep'
 						$end 'Sweeps'
 					$end 'SimDataExtractor'
@@ -8877,18 +8589,16 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1592, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1593, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1594, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1595, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1596, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1597, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1629, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1630, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1631, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1632, 3, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Matrix1.CplCoef(Lpt1,Lpt1)', 1, 90, false, SimValueID=1644, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0, 'ParameterIndex', false, '0', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1645, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '-1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1632, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1633, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1634, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1636, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1637, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1638, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1668, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
+						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1669, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
+						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1670, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
+						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1671, 3, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0)
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -8968,7 +8678,7 @@ $begin 'AnsoftProject'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='secondaryYOffset'
-								Column='0mm;25mm;50mm'
+								Column='0mm'
 								Units='mm'
 							$end 'Sweep'
 							$begin 'Sweep'
@@ -8988,7 +8698,7 @@ $begin 'AnsoftProject'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='I'
-								Column='1.4142135623731A'
+								Column='1.4142135623731A;10.6066017177982A'
 								Units='A'
 							$end 'Sweep'
 							$begin 'Sweep'
@@ -9026,12 +8736,12 @@ $begin 'AnsoftProject'
 				$end 'Solution'
 			$end 'SimSetup'
 			$begin 'Version ID Map'
-				V=1600
+				V=1635
 				$begin 'Setup'
 					N='Setup1'
-					V=1600
-					Soln(N='AdaptivePass', V=1600)
-					Soln(N='LastAdaptive', V=1600)
+					V=1635
+					Soln(N='AdaptivePass', V=1635)
+					Soln(N='LastAdaptive', V=1635)
 				$end 'Setup'
 			$end 'Version ID Map'
 			$begin 'ID Map'
@@ -9055,7 +8765,7 @@ $begin 'AnsoftProject'
 		Notes=$begin_cdata$ $end_cdata$
 		$begin 'AnimationSetups'
 		$end 'AnimationSetups'
-		CacheHeaderFile='HDR56AF10792164238078023.tmp'
+		CacheHeaderFile='HDR5B681225616424513914.tmp'
 	$end 'Maxwell3DModel'
 	$begin 'Maxwell3DModel'
 		RepRewriteV2=true
@@ -12927,8 +12637,6 @@ $begin 'AnsoftProject'
 			$begin 'PlotDefaults'
 				Default_SolutionId=828
 				Default_PlotFolder='Automatic'
-				Default_Phase='0deg'
-				Default_Freq='10kHz'
 			$end 'PlotDefaults'
 			$begin 'FieldsPlotManagerID'
 				NextUniqueID=4
@@ -12961,9 +12669,6 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1636, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1637, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1638, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -13011,96 +12716,6 @@ $begin 'AnsoftProject'
 								Column='10kHz'
 								Units='kHz'
 							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FerriteCoilGap'
-								Column='3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SCLength'
-								Column='81.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteWidth'
-								Column='15mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteHeight'
-								Column='8mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerrriteOffset'
-								Column='25mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='N2'
-								Column='10'
-								Units=''
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I2'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='secondaryYOffset'
-								Column='0mm;25mm;50mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteLength'
-								Column='108mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutOffset'
-								Column='128.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutWidth'
-								Column='94.2mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryCoilThickness'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCoilWidth'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumThickness'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumFerriteGap'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FirstFerritePosition'
-								Column='-450mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryXOffset'
-								Column='32mm'
-								Units='mm'
-							$end 'Sweep'
 						$end 'Sweeps'
 					$end 'SimDataExtractor'
 				$end 'Solution'
@@ -13113,18 +12728,6 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1592, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1593, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1594, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1595, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1596, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1597, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1629, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1630, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1631, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1632, 3, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Matrix1.CplCoef(Lpt1,Lpt1)', 1, 90, false, SimValueID=1644, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0, 'ParameterIndex', false, '0', 'PC', false, '1001')
-						SimValue('Matrix1.CplCoef(Lpt1,Lpt1)', 1, 90, false, SimValueID=1645, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '-1', 'ParameterIndex', false, '1', 'PC', false, '1001')
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -13167,96 +12770,6 @@ $begin 'AnsoftProject'
 								Column='10kHz'
 								Units='kHz'
 							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FerriteCoilGap'
-								Column='3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SCLength'
-								Column='81.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteWidth'
-								Column='15mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteHeight'
-								Column='8mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerrriteOffset'
-								Column='25mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='N2'
-								Column='10'
-								Units=''
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I2'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='secondaryYOffset'
-								Column='0mm;25mm;50mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteLength'
-								Column='108mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutOffset'
-								Column='128.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutWidth'
-								Column='94.2mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryCoilThickness'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCoilWidth'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumThickness'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumFerriteGap'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FirstFerritePosition'
-								Column='-450mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryXOffset'
-								Column='32mm'
-								Units='mm'
-							$end 'Sweep'
 						$end 'Sweeps'
 					$end 'SimDataExtractor'
 				$end 'Solution'
@@ -13291,7 +12804,7 @@ $begin 'AnsoftProject'
 		Notes=$begin_cdata$ $end_cdata$
 		$begin 'AnimationSetups'
 		$end 'AnimationSetups'
-		CacheHeaderFile='HDR56B210792164238078124.tmp'
+		CacheHeaderFile='HDR5B6C1225616424513925.tmp'
 	$end 'Maxwell3DModel'
 	$begin 'Maxwell3DModel'
 		RepRewriteV2=true
@@ -17092,8 +16605,6 @@ $begin 'AnsoftProject'
 			$begin 'PlotDefaults'
 				Default_SolutionId=828
 				Default_PlotFolder='Automatic'
-				Default_Phase='0deg'
-				Default_Freq='10kHz'
 			$end 'PlotDefaults'
 			$begin 'FieldsPlotManagerID'
 				NextUniqueID=4
@@ -17126,9 +16637,6 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1639, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1640, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1641, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -17176,96 +16684,6 @@ $begin 'AnsoftProject'
 								Column='10kHz'
 								Units='kHz'
 							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FerriteCoilGap'
-								Column='3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SCLength'
-								Column='81.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteWidth'
-								Column='15mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteHeight'
-								Column='8mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerrriteOffset'
-								Column='25mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='N2'
-								Column='10'
-								Units=''
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I2'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='secondaryYOffset'
-								Column='0mm;25mm;50mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteLength'
-								Column='108mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutOffset'
-								Column='128.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutWidth'
-								Column='94.2mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryCoilThickness'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCoilWidth'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumThickness'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumFerriteGap'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FirstFerritePosition'
-								Column='-450mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryXOffset'
-								Column='-20mm'
-								Units='mm'
-							$end 'Sweep'
 						$end 'Sweeps'
 					$end 'SimDataExtractor'
 				$end 'Solution'
@@ -17278,18 +16696,6 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1592, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1593, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1594, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1595, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1596, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1597, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1632, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1633, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1634, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1635, 3, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Matrix1.CplCoef(Lpt1,Lpt1)', 1, 90, false, SimValueID=1647, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0, 'ParameterIndex', false, '0', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1648, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '-1', 'ParameterIndex', false, '1', 'PC', false, '1001')
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -17332,96 +16738,6 @@ $begin 'AnsoftProject'
 								Column='10kHz'
 								Units='kHz'
 							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FerriteCoilGap'
-								Column='3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SCLength'
-								Column='81.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteWidth'
-								Column='15mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteHeight'
-								Column='8mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerrriteOffset'
-								Column='25mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='N2'
-								Column='10'
-								Units=''
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I2'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='secondaryYOffset'
-								Column='0mm;25mm;50mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteLength'
-								Column='108mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutOffset'
-								Column='128.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutWidth'
-								Column='94.2mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryCoilThickness'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCoilWidth'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumThickness'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumFerriteGap'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FirstFerritePosition'
-								Column='-450mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryXOffset'
-								Column='-20mm'
-								Units='mm'
-							$end 'Sweep'
 						$end 'Sweeps'
 					$end 'SimDataExtractor'
 				$end 'Solution'
@@ -17456,16 +16772,14 @@ $begin 'AnsoftProject'
 		Notes=$begin_cdata$ $end_cdata$
 		$begin 'AnimationSetups'
 		$end 'AnimationSetups'
-		CacheHeaderFile='HDR56B210792164238078125.tmp'
+		CacheHeaderFile='HDR5B6C1225616424513926.tmp'
 	$end 'Maxwell3DModel'
 	$begin 'DataInstances'
 		DesignEditor='TopLevel'
 		Refdes('5', 'U6')
 		Refdes('3', 'U4')
-		Refdes('1', 'U2')
 		Refdes('4', 'U5')
 		Refdes('0', 'U1')
-		Refdes('2', 'U3')
 		$begin 'CompInstances'
 			$begin 'Compinst'
 				ID='5'
@@ -17527,7 +16841,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=17
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 156, 156, 1395, 734), OrientationMatrix(-0.00118178583215922, -7.32196494936943e-05, 2.51940255111549e-05, 0, 7.7429176599253e-05, -0.001114432932809, 0.000393283786252141, 0, -6.08685581937607e-07, 0.000394100876292214, 0.00111682782880962, 0, 0.00932684540748596, 0.201167941093445, -5.76836824417114, 1, 0, -0.627591788768768, 0.546194016933441, -0.301030844449997, 0.359995931386948, -0.0149455070495605, 11.5334777832031), Drawings[16: 'Region', 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=20, dYForGrid=20, dZForGrid=20, dRForGrid=20, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 156, 156, 1395, 734), OrientationMatrix(-0.000374519528122619, -0.000600567203946412, 0.000949580105952919, 0, 0.00112355838064104, -0.000200189024326392, 0.000316526711685583, 0, -2.44550820566181e-11, 0.00100094522349536, 0.000633053597994149, 0, 2.84714634091188e-08, -0.00815745908766985, -5.91563081741333, 1, 0, -1.93084096908569, 1.93084096908569, -1, 1, 0.13618803024292, 11.6847534179688), Drawings[16: 'Region', 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=100, dYForGrid=100, dZForGrid=100, dRForGrid=100, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -18079,7 +17393,7 @@ $begin 'AnsoftProject'
 								Title=''
 								Domain=''
 								$begin 'Migration'
-									MigVersion(0, 0, 'mig(0.0)')
+									MigVersion(1, 0, '2021R1 mig(1.0)')
 								$end 'Migration'
 								$begin 'Graph2DsV2'
 									$begin 'Graph2D'
@@ -19365,7 +18679,7 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=36
+											ItemID=-1
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
@@ -19471,6 +18785,30 @@ $begin 'AnsoftProject'
 																	ModifyPosition=false
 																$end 'OverlayLayoutAttribute'
 															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=5000
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=5000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
 														$end 'DockableOverlayLayoutAttribute'
 													$end 'SubMapItem'
 												$end 'MainMapItem'
@@ -19517,7 +18855,7 @@ $begin 'AnsoftProject'
 								Title=''
 								Domain=''
 								$begin 'Migration'
-									MigVersion(0, 0, 'mig(0.0)')
+									MigVersion(1, 0, '2021R1 mig(1.0)')
 								$end 'Migration'
 								$begin 'Graph2DsV2'
 									$begin 'Graph2D'
@@ -20776,7 +20114,7 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=36
+											ItemID=-1
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
@@ -20882,6 +20220,30 @@ $begin 'AnsoftProject'
 																	ModifyPosition=false
 																$end 'OverlayLayoutAttribute'
 															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=5000
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=5000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
 														$end 'DockableOverlayLayoutAttribute'
 													$end 'SubMapItem'
 												$end 'MainMapItem'
@@ -20923,26 +20285,6 @@ $begin 'AnsoftProject'
 							ReportID=43
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(36)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=1
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-														$begin 'svrc'
-															svid=4
-															view(36, cam(XYCam(false, true, true, true, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1)))
-														$end 'svrc'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(5, -1, -1, -8, -31, 52, 52, 1395, 434))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Output Variables Plot 1'
@@ -20950,26 +20292,6 @@ $begin 'AnsoftProject'
 							ReportID=46
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(36)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=1
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-														$begin 'svrc'
-															svid=4
-															view(36, cam(XYCam(false, true, true, true, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1)))
-														$end 'svrc'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(5, -1, -1, -8, -31, 78, 78, 1421, 460))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Output Variables Plot 2'
@@ -20990,7 +20312,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=11
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 104, 104, 1343, 682), OrientationMatrix(-0.000916776538360864, 0.000477815890917554, -0.000577771163079888, 0, -0.000748947029933333, -0.000626024790108204, 0.000670672336127609, 0, -3.48230059898924e-05, 0.000884537410456687, 0.000786761287599802, 0, 0.0413325317203999, 0.0327266119420528, -5.86553001403809, 1, 0, -1.7757009267807, 1.7757009267807, -1, 1, 0.0849199295043945, 11.6333150863647), Drawings[18: 'Region', 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7', 'PrimaryFerrite1_8'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=100, dYForGrid=100, dZForGrid=100, dRForGrid=100, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(3, -1, -1, -8, -31, 104, 104, 1343, 682), OrientationMatrix(0.000195987711776979, -0.000372095586499199, 0.00110713101457804, 0, 0.00115628796629608, 0.000220437068492174, -0.000130599233671091, 0, -0.000165039920830168, 0.00110252760350704, 0.00039976806147024, 0, -0.0776351690292358, 0.161787897348404, -6.24336290359497, 1, 0, -0.894810020923615, 0.586252152919769, -0.237402454018593, 0.500713288784027, 0.465866088867188, 12.0143432617188), Drawings[20: 'Region', 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7', 'PrimaryFerrite1_8', 'Lpt1', 'Lpt2'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=20, dYForGrid=20, dZForGrid=20, dRForGrid=20, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -21012,7 +20334,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=42
-									VersionID=77
+									VersionID=82
 									Name='Lst'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -21185,7 +20507,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=44
-									VersionID=79
+									VersionID=83
 									Name='Lpt'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -21362,7 +20684,7 @@ $begin 'AnsoftProject'
 										$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 									$end 'DesignSolnDefn'
 									ID=45
-									VersionID=81
+									VersionID=84
 									Name='K'
 									TieNameToExpr=true
 									$begin 'Components'
@@ -21527,7 +20849,7 @@ $begin 'AnsoftProject'
 						NextUniqueID=47
 						MoveBackwards=false
 						$begin 'NextVersID'
-							NextUniqueID=82
+							NextUniqueID=85
 							MoveBackwards=false
 						$end 'NextVersID'
 					$end 'ReportManager'
@@ -21542,7 +20864,7 @@ $begin 'AnsoftProject'
 								Title=''
 								Domain=''
 								$begin 'Migration'
-									MigVersion(0, 0, 'mig(0.0)')
+									MigVersion(1, 0, '2021R1 mig(1.0)')
 								$end 'Migration'
 								$begin 'Graph2DsV2'
 									$begin 'Graph2D'
@@ -22916,7 +22238,7 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=36
+											ItemID=-1
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
@@ -23022,6 +22344,30 @@ $begin 'AnsoftProject'
 																	ModifyPosition=false
 																$end 'OverlayLayoutAttribute'
 															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=5000
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=5000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
 														$end 'DockableOverlayLayoutAttribute'
 													$end 'SubMapItem'
 												$end 'MainMapItem'
@@ -23072,7 +22418,7 @@ $begin 'AnsoftProject'
 								Title=''
 								Domain=''
 								$begin 'Migration'
-									MigVersion(0, 0, 'mig(0.0)')
+									MigVersion(1, 0, '2021R1 mig(1.0)')
 								$end 'Migration'
 								$begin 'Graph2DsV2'
 									$begin 'Graph2D'
@@ -24375,7 +23721,7 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=36
+											ItemID=-1
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
@@ -24481,6 +23827,30 @@ $begin 'AnsoftProject'
 																	ModifyPosition=false
 																$end 'OverlayLayoutAttribute'
 															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=5000
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=5000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
 														$end 'DockableOverlayLayoutAttribute'
 													$end 'SubMapItem'
 												$end 'MainMapItem'
@@ -24524,26 +23894,6 @@ $begin 'AnsoftProject'
 							ReportID=43
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(36)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=1
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-														$begin 'svrc'
-															svid=4
-															view(36, cam(XYCam(false, true, true, true, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1)))
-														$end 'svrc'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(5, -1, -1, -8, -31, 130, 130, 1317, 512))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Output Variables Plot 1'
@@ -24551,26 +23901,6 @@ $begin 'AnsoftProject'
 							ReportID=46
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(36)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=1
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-														$begin 'svrc'
-															svid=4
-															view(36, cam(XYCam(false, true, true, true, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1)))
-														$end 'svrc'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(5, -1, -1, -8, -31, 156, 156, 1499, 538))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Output Variables Plot 2'
@@ -24591,7 +23921,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=14
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 130, 130, 1369, 708), OrientationMatrix(-0.00118411413859576, -2.23009410547093e-05, 1.61014395416714e-06, 0, 1.15933080451214e-05, -0.000539576867595315, 0.00105420593172312, 0, -1.91173839994008e-05, 0.00105404003988951, 0.000539704225957394, 0, 0.0229612942785025, 0.0219196006655693, -5.89100027084351, 1, 0, -1.7757009267807, 1.7757009267807, -1, 1, 0.112363815307617, 11.6608390808105), Drawings[17: 'Region', 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=100, dYForGrid=100, dZForGrid=100, dRForGrid=100, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 194, 237, 1433, 815), OrientationMatrix(-0.000374519528122619, -0.000600567203946412, 0.000949580105952919, 0, 0.00112355838064104, -0.000200189024326392, 0.000316526711685583, 0, -2.44550820566181e-11, 0.00100094522349536, 0.000633053597994149, 0, 2.84714634091188e-08, -0.00815745908766985, -5.91563081741333, 1, 0, -1.93084096908569, 1.93084096908569, -1, 1, 0.13618803024292, 11.6847534179688), Drawings[17: 'Region', 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=100, dYForGrid=100, dZForGrid=100, dRForGrid=100, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -25143,7 +24473,7 @@ $begin 'AnsoftProject'
 								Title=''
 								Domain=''
 								$begin 'Migration'
-									MigVersion(0, 0, 'mig(0.0)')
+									MigVersion(1, 0, '2021R1 mig(1.0)')
 								$end 'Migration'
 								$begin 'Graph2DsV2'
 									$begin 'Graph2D'
@@ -26429,7 +25759,7 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=36
+											ItemID=-1
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
@@ -26535,6 +25865,30 @@ $begin 'AnsoftProject'
 																	ModifyPosition=false
 																$end 'OverlayLayoutAttribute'
 															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=5000
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=5000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
 														$end 'DockableOverlayLayoutAttribute'
 													$end 'SubMapItem'
 												$end 'MainMapItem'
@@ -26581,7 +25935,7 @@ $begin 'AnsoftProject'
 								Title=''
 								Domain=''
 								$begin 'Migration'
-									MigVersion(0, 0, 'mig(0.0)')
+									MigVersion(1, 0, '2021R1 mig(1.0)')
 								$end 'Migration'
 								$begin 'Graph2DsV2'
 									$begin 'Graph2D'
@@ -27840,7 +27194,7 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=36
+											ItemID=-1
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
@@ -27946,6 +27300,30 @@ $begin 'AnsoftProject'
 																	ModifyPosition=false
 																$end 'OverlayLayoutAttribute'
 															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=5000
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=5000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
 														$end 'DockableOverlayLayoutAttribute'
 													$end 'SubMapItem'
 												$end 'MainMapItem'
@@ -27987,26 +27365,6 @@ $begin 'AnsoftProject'
 							ReportID=43
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(36)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=1
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-														$begin 'svrc'
-															svid=4
-															view(36, cam(XYCam(false, true, true, true, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1)))
-														$end 'svrc'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(5, -1, -1, -8, -31, 0, 0, 1187, 382))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Output Variables Plot 1'
@@ -28014,26 +27372,6 @@ $begin 'AnsoftProject'
 							ReportID=45
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(36)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=1
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-														$begin 'svrc'
-															svid=4
-															view(36, cam(XYCam(false, true, true, true, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1)))
-														$end 'svrc'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(5, -1, -1, -8, -31, 26, 26, 1369, 408))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Output Variables Plot 2'
@@ -28054,7 +27392,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=2
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 26, 26, 980, 381), OrientationMatrix(-0.000981674646027386, -0.000603205757215619, 0.000273971061687917, 0, 0.000634786556474864, -0.000716211798135191, 0.000697646988555789, 0, -0.000189641228644177, 0.000725127873010933, 0.000916966760996729, 0, 0.44975945353508, -0.134713709354401, -5.60079956054688, 1, 0, 0.656391441822052, 0.951232135295868, -0.0895668119192123, 0.0487644523382187, 2.49735736846924, 8.68929576873779), Drawings[18: 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7', 'PrimaryFerrite1_8', 'PrimaryFerrite1_9'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=10, dYForGrid=10, dZForGrid=10, dRForGrid=10, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 26, 26, 980, 381), OrientationMatrix(-0.000374519528122619, -0.000600567203946412, 0.000949580105952919, 0, 0.00112355838064104, -0.000200189024326392, 0.000316526711685583, 0, -2.44550820566181e-11, 0.00100094522349536, 0.000633053597994149, 0, 1.47680751183543e-07, -0.00815745908766985, -5.91563081741333, 1, 0, -2.39743590354919, 2.39743590354919, -1, 1, 0.13618803024292, 11.6847534179688), Drawings[18: 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7', 'PrimaryFerrite1_8', 'PrimaryFerrite1_9'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=200, dYForGrid=200, dZForGrid=200, dRForGrid=200, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -28606,7 +27944,7 @@ $begin 'AnsoftProject'
 								Title=''
 								Domain=''
 								$begin 'Migration'
-									MigVersion(0, 0, 'mig(0.0)')
+									MigVersion(1, 0, '2021R1 mig(1.0)')
 								$end 'Migration'
 								$begin 'Graph2DsV2'
 									$begin 'Graph2D'
@@ -29980,7 +29318,7 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=36
+											ItemID=-1
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
@@ -30086,6 +29424,30 @@ $begin 'AnsoftProject'
 																	ModifyPosition=false
 																$end 'OverlayLayoutAttribute'
 															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=5000
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=5000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
 														$end 'DockableOverlayLayoutAttribute'
 													$end 'SubMapItem'
 												$end 'MainMapItem'
@@ -30136,7 +29498,7 @@ $begin 'AnsoftProject'
 								Title=''
 								Domain=''
 								$begin 'Migration'
-									MigVersion(0, 0, 'mig(0.0)')
+									MigVersion(1, 0, '2021R1 mig(1.0)')
 								$end 'Migration'
 								$begin 'Graph2DsV2'
 									$begin 'Graph2D'
@@ -31439,7 +30801,7 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=36
+											ItemID=-1
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
@@ -31545,6 +30907,30 @@ $begin 'AnsoftProject'
 																	ModifyPosition=false
 																$end 'OverlayLayoutAttribute'
 															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=5000
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=5000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
 														$end 'DockableOverlayLayoutAttribute'
 													$end 'SubMapItem'
 												$end 'MainMapItem'
@@ -31588,26 +30974,6 @@ $begin 'AnsoftProject'
 							ReportID=43
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(36)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=1
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-														$begin 'svrc'
-															svid=4
-															view(36, cam(XYCam(false, true, true, true, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1)))
-														$end 'svrc'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(5, -1, -1, -8, -31, 78, 78, 1265, 460))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Output Variables Plot 1'
@@ -31615,26 +30981,6 @@ $begin 'AnsoftProject'
 							ReportID=46
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(36)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=1
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-														$begin 'svrc'
-															svid=4
-															view(36, cam(XYCam(false, true, true, true, -0.0640822052955627, 0.93591845035553, 0.0739440321922302, 1.07394480705261, 0, 1, 0, 1, 0, 1)))
-														$end 'svrc'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(3, -1, -1, -8, -31, 104, 104, 1447, 486))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Output Variables Plot 2'
@@ -31821,7 +31167,7 @@ D//2Q=='
 		DesignName='DoubleDCoilWith15FerriteBars'
 		Notes=''
 		Factory='Maxwell 3D'
-		IsSolved=true
+		IsSolved=false
 		'Nominal Setups'[1: 'Setup1']
 		'Nominal Setup Types'[1: '']
 		'Optimetrics Setups'[1: 'HorizontalOffsetSweep']
@@ -32141,297 +31487,311 @@ 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\
-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'
+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'
 	$end 'DesignInfo'
 	$begin 'DesignInfo'
 		DesignName='DoubleDCoilWith17FerriteBars'
 		Notes=''
 		Factory='Maxwell 3D'
-		IsSolved=true
+		IsSolved=false
 		'Nominal Setups'[1: 'Setup1']
 		'Nominal Setup Types'[1: '']
 		'Optimetrics Setups'[1: 'HorizontalOffsetSweep']
@@ -32737,7 +32097,7 @@ RQAUUUUAFFFFAH/2Q=='
 		DesignName='DoubleDCoilWithFerriteBars'
 		Notes=''
 		Factory='Maxwell 3D'
-		IsSolved=true
+		IsSolved=false
 		'Nominal Setups'[1: 'Setup1']
 		'Nominal Setup Types'[1: '']
 		'Optimetrics Setups'[1: 'HorizontalOffsetSweep']
