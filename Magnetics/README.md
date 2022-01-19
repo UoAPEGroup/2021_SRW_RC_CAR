@@ -6,7 +6,7 @@
 - Tor
 
 ## Description:
-This "Magnetics" folder contains all of the magnetics simulations done for the primary and pickup coils to be used for the RC car design. The primary coils, which will go on track while the pickup coils would go onboard the RC car. In the folder Final Design is the final ansys file containing the finished coil design and the Inventor files for the Track holder. 
+This "Magnetics" folder contains all of the magnetics simulations done for the primary and pickup coils to be used for the RC car design. The primary coils, which will go on track while the pickup coils would go onboard the RC car. In the folder Final Design is the final ansys file containing the finished coil design.
 
 ## Specifications considered when designing the coils:
 ### Track Details:
@@ -53,19 +53,19 @@ This "Magnetics" folder contains all of the magnetics simulations done for the p
 ## Final Values, Inputs and Outputs
 ### Final Magnetics Values:
 - Primary Inductance = 31uH
-- Secondary Inductance = 7.6 - 7.9uH
+- Secondary Inductance = 7.3 - 8uH
 
 ### Final K values:
-- At 0mm Horizontal Offset = 0.15
-- At 50mm Horizontal Offset = 0.075
-- At 50mm Offset And No Alligned Ferrite = 0.067
+- At 0mm Horizontal Offset = 0.17
+- At 50mm Horizontal Offset = 0.084
+- At 50mm Offset And No Alligned Ferrite = 0.069
 
 ### Input Values:
 - Input Current = 7.5A rms
 
 ### Output Values:
-- Output Current Best Case (Isc) = 3.139A
-- Output Voltage Best Case (Voc) =  1.568V
-- Output Current Worst Case (Isc) = 1.412A
-- Output Voltage Worst Case (Voc) =  0.66V
+- Output Current Best Case (Isc) = 3.62A
+- Output Voltage Best Case (Voc) =  1.90V
+- Output Current Worst Case (Isc) = 1.50A
+- Output Voltage Worst Case (Voc) =  0.69V
 
