@@ -4635,8 +4635,6 @@ $begin 'AnsoftProject'
 			$begin 'PlotDefaults'
 				Default_SolutionId=828
 				Default_PlotFolder='Automatic'
-				Default_Phase='0deg'
-				Default_Freq='10kHz'
 			$end 'PlotDefaults'
 			$begin 'FieldsPlotManagerID'
 				NextUniqueID=4
@@ -4669,9 +4667,6 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1800, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1801, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1802, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -4719,96 +4714,6 @@ $begin 'AnsoftProject'
 								Column='10kHz'
 								Units='kHz'
 							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FerriteCoilGap'
-								Column='3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SCLength'
-								Column='81.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteWidth'
-								Column='15mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteHeight'
-								Column='8mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerrriteOffset'
-								Column='14mm;16mm;18mm;20mm;25mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='N2'
-								Column='7;10;13;16'
-								Units=''
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I2'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='secondaryYOffset'
-								Column='0mm;50mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteLength'
-								Column='108mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutOffset'
-								Column='128.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutWidth'
-								Column='94.2mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryCoilThickness'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCoilWidth'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumThickness'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumFerriteGap'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FirstFerritePosition'
-								Column='-450mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryXOffset'
-								Column='32mm;75mm'
-								Units='mm'
-							$end 'Sweep'
 						$end 'Sweeps'
 					$end 'SimDataExtractor'
 				$end 'Solution'
@@ -4821,20 +4726,9 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('Matrix1.CplCoef(Lpt1,Lpt1)', 1, 90, false, SimValueID=1755, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0, 'ParameterIndex', false, '0', 'PC', false, '1001')
-						SimValue('Matrix1.CplCoef(Lpt1,Lpt1)', 1, 90, false, SimValueID=1756, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '-1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1757, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1758, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1759, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L', 1, 22, false, SimValueID=1760, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1761, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1762, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1763, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1793, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1794, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1795, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1796, 3, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1826, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '-1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1841, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1842, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1843, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -4876,96 +4770,6 @@ $begin 'AnsoftProject'
 								Variable='Freq'
 								Column='10kHz'
 								Units='kHz'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FerriteCoilGap'
-								Column='3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SCLength'
-								Column='81.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteWidth'
-								Column='15mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteHeight'
-								Column='8mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerrriteOffset'
-								Column='14mm;16mm;18mm;20mm;25mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='N2'
-								Column='7;10;13;16'
-								Units=''
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I2'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='secondaryYOffset'
-								Column='0mm;50mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryFerriteLength'
-								Column='108mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutOffset'
-								Column='128.5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCuttoutWidth'
-								Column='94.2mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='I'
-								Column='1.4142135623731A'
-								Units='A'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryCoilThickness'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='PrimaryCoilWidth'
-								Column='4.3mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumThickness'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='AluminumFerriteGap'
-								Column='5mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='FirstFerritePosition'
-								Column='-450mm'
-								Units='mm'
-							$end 'Sweep'
-							$begin 'Sweep'
-								Variable='SecondaryXOffset'
-								Column='32mm;75mm'
-								Units='mm'
 							$end 'Sweep'
 						$end 'Sweeps'
 					$end 'SimDataExtractor'
@@ -8985,7 +8789,7 @@ $begin 'AnsoftProject'
 					IsEnabled=true
 					NextUniqueID=1
 					MoveBackwards=false
-					GoalSetupVersion=1
+					GoalSetupVersion=2
 					Version=0
 					$begin 'ProdOptiSetupDataV2'
 						SaveFields=false
@@ -9083,6 +8887,21 @@ $begin 'AnsoftProject'
 							$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
 							Calculation='Isc'
 							Name='Isc'
+							$begin 'Ranges'
+								Range(Var='Freq', Type='d', DiscreteValues='10kHz')
+							$end 'Ranges'
+						$end 'Goal'
+						$begin 'Goal'
+							$begin 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+								DesignID=10
+								SolutionID=828
+								$begin 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+									ReportType=2
+									SimValueContext(0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+								$end 'REPORT_TYPE_SIM_VALUE_CONTEXT'
+							$end 'DESIGN_SOLUTION_SIM_VALUE_CONTEXT'
+							Calculation='Voc'
+							Name='Voc'
 							$begin 'Ranges'
 								Range(Var='Freq', Type='d', DiscreteValues='10kHz')
 							$end 'Ranges'
@@ -9357,9 +9176,9 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1845, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1846, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1847, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
+						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1925, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
+						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1926, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
+						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1927, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1')
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -9419,18 +9238,18 @@ $begin 'AnsoftProject'
 							MoveBackwards=false
 							IDMap()
 						$end 'QuantityIDs'
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1815, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1816, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1817, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1818, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1819, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1820, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1840, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1841, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1842, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
-						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1843, 3, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0)
-						SimValue('Matrix1.CplCoef(Lpt1,Lpt1)', 1, 90, false, SimValueID=1874, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0, 'ParameterIndex', false, '0', 'PC', false, '1001')
-						SimValue('Matrix1.CplCoef(Lpt1,Lpt1)', 1, 90, false, SimValueID=1875, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '-1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1910, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1911, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1912, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1913, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
+						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1914, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
+						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1915, 3, 0, 2, 0, false, false, -2, 1, 0, 1, 1, '', 0, 0)
+						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1916, 3, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0)
+						SimValue('L(Lst,JoinSeries1)', 1, 22, false, SimValueID=1917, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(Lst,Lst)', 1, 22, false, SimValueID=1918, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('L(JoinSeries1,JoinSeries1)', 1, 22, false, SimValueID=1919, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'ExpressionCache', false, '1', 'Matrix', false, '6', 'MatrixIndex', false, '1', 'ParameterIndex', false, '1', 'PC', false, '1001')
+						SimValue('Matrix1.CplCoef(Lpt1,Lpt1)', 1, 90, false, SimValueID=1938, 0, 0, 2, 0, false, false, -1, 1, 0, 1, 1, '', 0, 0, 'ParameterIndex', false, '0', 'PC', false, '1001')
+						SimValue('Matrix1.CplCoef(Lpt1,Lpt1)', 1, 90, false, SimValueID=1939, 0, 0, 2, 0, false, false, 5, 1, 0, 1, 1, '', 0, 0, 'Matrix', false, '-1', 'ParameterIndex', false, '1', 'PC', false, '1001')
 						$begin 'Sweeps'
 							$begin 'PostprocessSweep'
 								Variable='NormalizedDistance'
@@ -9470,8 +9289,8 @@ $begin 'AnsoftProject'
 							$end 'PostprocessSweep'
 							$begin 'Sweep'
 								Variable='Freq'
-								Column='1e-05GHz'
-								Units='GHz'
+								Column='10kHz'
+								Units='kHz'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='FerriteCoilGap'
@@ -9495,7 +9314,7 @@ $begin 'AnsoftProject'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='SecondaryFerrriteOffset'
-								Column='10mm;12mm;14mm;15mm;16mm'
+								Column='10mm;12mm;14mm;16mm'
 								Units='mm'
 							$end 'Sweep'
 							$begin 'Sweep'
@@ -9510,7 +9329,7 @@ $begin 'AnsoftProject'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='secondaryYOffset'
-								Column='50mm'
+								Column='0mm;50mm'
 								Units='mm'
 							$end 'Sweep'
 							$begin 'Sweep'
@@ -9560,7 +9379,7 @@ $begin 'AnsoftProject'
 							$end 'Sweep'
 							$begin 'Sweep'
 								Variable='SecondaryXOffset'
-								Column='50mm'
+								Column='0mm;25mm;50mm'
 								Units='mm'
 							$end 'Sweep'
 						$end 'Sweeps'
@@ -17673,7 +17492,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=17
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 156, 156, 1395, 734), OrientationMatrix(-0.000374519528122619, -0.000600567203946412, 0.000949580105952919, 0, 0.00112355838064104, -0.000200189024326392, 0.000316526711685583, 0, -2.44550820566181e-11, 0.00100094522349536, 0.000633053597994149, 0, 2.84714598564051e-08, -0.00815745908766985, -5.91563081741333, 1, 0, -1.93084108829498, 1.93084108829498, -1, 1, 0.13618803024292, 11.6847534179688), Drawings[16: 'Region', 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=100, dYForGrid=100, dZForGrid=100, dRForGrid=100, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 156, 156, 1395, 734), OrientationMatrix(-0.000374519528122619, -0.000600567203946412, 0.000949580105952919, 0, 0.00112355838064104, -0.000200189024326392, 0.000316526711685583, 0, -2.44550820566181e-11, 0.00100094522349536, 0.000633053597994149, 0, 2.84714598564051e-08, -0.00815745908766985, -5.91563081741333, 1, 0, -1.93084096908569, 1.93084096908569, -1, 1, 0.13618803024292, 11.6847534179688), Drawings[16: 'Region', 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=100, dYForGrid=100, dZForGrid=100, dRForGrid=100, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -21144,7 +20963,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=2
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 26, 26, 980, 381), OrientationMatrix(7.94844454503618e-05, -0.000158023234689608, 0.00117104570381343, 0, 0.00116897991392761, 0.000181958937901072, -5.47869312867988e-05, 0, -0.000172609026776627, 0.0011595522519201, 0.000168195023434237, 0, 0.153770789504051, 0.111753061413765, -5.80692291259766, 1, 0, -0.524686992168427, 0.669623076915741, -0.169275969266891, 0.381129771471024, 2.70954418182373, 8.9015588760376), Drawings[18: 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7', 'PrimaryFerrite1_8', 'PrimaryFerrite1_9'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=50, dYForGrid=50, dZForGrid=50, dRForGrid=50, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 26, 26, 980, 381), OrientationMatrix(-0.000374519528122619, -0.000600567203946412, 0.000949580105952919, 0, 0.00112355838064104, -0.000200189024326392, 0.000316526711685583, 0, -2.44550820566181e-11, 0.00100094522349536, 0.000633053597994149, 0, 1.47680751183543e-07, -0.00815745908766985, -5.91563081741333, 1, 0, -2.39743590354919, 2.39743590354919, -1, 1, 0.13618803024292, 11.6847534179688), Drawings[18: 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7', 'PrimaryFerrite1_8', 'PrimaryFerrite1_9'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=200, dYForGrid=200, dZForGrid=200, dRForGrid=200, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -25084,7 +24903,7 @@ $begin 'AnsoftProject'
 								Title=''
 								Domain=''
 								$begin 'Migration'
-									MigVersion(0, 0, 'mig(0.0)')
+									MigVersion(1, 0, '2021R1 mig(1.0)')
 								$end 'Migration'
 								$begin 'Graph2DsV2'
 									$begin 'Graph2D'
@@ -26497,7 +26316,7 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=36
+											ItemID=-1
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
@@ -26603,6 +26422,30 @@ $begin 'AnsoftProject'
 																	ModifyPosition=false
 																$end 'OverlayLayoutAttribute'
 															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=5000
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=5000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=false
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
 														$end 'DockableOverlayLayoutAttribute'
 													$end 'SubMapItem'
 												$end 'MainMapItem'
@@ -26655,7 +26498,7 @@ $begin 'AnsoftProject'
 								Title=''
 								Domain=''
 								$begin 'Migration'
-									MigVersion(0, 0, 'mig(0.0)')
+									MigVersion(1, 0, '2021R1 mig(1.0)')
 								$end 'Migration'
 								$begin 'Graph2DsV2'
 									$begin 'Graph2D'
@@ -28121,7 +27964,7 @@ $begin 'AnsoftProject'
 									$end 'DocDefaultAttributes'
 									$begin 'PerViewPlotAttributeStoreMap'
 										$begin 'MapItem'
-											ItemID=36
+											ItemID=-1
 											$begin 'PlotAttributeStoreMap'
 												$begin 'MainMapItem'
 													$begin 'SubMapItem'
@@ -28227,6 +28070,30 @@ $begin 'AnsoftProject'
 																	ModifyPosition=true
 																$end 'OverlayLayoutAttribute'
 															$end 'Dock_0'
+															$begin 'Dock_1'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=6877
+																		Left=0
+																		Bottom=10000
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=true
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_1'
+															$begin 'Dock_2'
+																$begin 'OverlayLayoutAttribute'
+																	$begin 'BoundingRect'
+																		Top=0
+																		Left=0
+																		Bottom=3123
+																		Right=10000
+																	$end 'BoundingRect'
+																	ModifySize=false
+																	ModifyPosition=true
+																$end 'OverlayLayoutAttribute'
+															$end 'Dock_2'
 														$end 'DockableOverlayLayoutAttribute'
 													$end 'SubMapItem'
 												$end 'MainMapItem'
@@ -28289,26 +28156,6 @@ $begin 'AnsoftProject'
 							ReportID=48
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(36)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=1
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-														$begin 'svrc'
-															svid=4
-															view(36, cam(XYCam(false, true, true, true, 0.00749799609184265, 1.01071631908417, -0.0011705607175827, 1.00204765796661, 0, 1, 0, 1, 0, 1)))
-														$end 'svrc'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(3, -1, -1, -8, -31, 182, 182, 1481, 615))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Output Variables Plot 3'
@@ -28316,26 +28163,6 @@ $begin 'AnsoftProject'
 							ReportID=50
 							$begin 'WindowInfoList'
 								$begin 'Report2D'
-									$begin 'ViewInfo'
-										$begin 'WrapperView'
-											ID(36)
-										$end 'WrapperView'
-										$begin 'WrapperDoc'
-											HiddenDrawings()
-											$begin 'DispType'
-												PlotType=1
-												$begin 'CurveMed'
-													$begin 'MedCamera'
-														$begin 'svrc'
-															svid=4
-															view(36, cam(XYCam(false, true, true, true, 0.0709815174341202, 1.00234770774841, 0.0488158687949181, 0.98018217086792, 0, 1, 0, 1, 0, 1)))
-														$end 'svrc'
-													$end 'MedCamera'
-												$end 'CurveMed'
-											$end 'DispType'
-										$end 'WrapperDoc'
-										WindowPos(WindowPos(5, -1, -1, -8, -31, 0, 0, 1455, 433))
-									$end 'ViewInfo'
 								$end 'Report2D'
 							$end 'WindowInfoList'
 						$end 'Output Variables Plot 4'
@@ -28356,7 +28183,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=11
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 104, 104, 1343, 682), OrientationMatrix(-0.00111412722617388, 4.77777139167301e-05, 0.000417118513723835, 0, 0.000391587702324614, -0.00030832682386972, 0.00108126155100763, 0, 0.000151413027197123, 0.00114899349864572, 0.000272802222752944, 0, 0.179266974329948, -0.227950870990753, -5.74486780166626, 1, 0, -0.0214522033929825, 0.358011662960052, -0.347817242145538, -0.151289492845535, -0.0502185821533203, 11.5386447906494), Drawings[21: 'Region', 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7', 'PrimaryFerrite1_8', 'Lst', 'Lpt2', 'Lpt1'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=10, dYForGrid=10, dZForGrid=10, dRForGrid=10, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(3, -1, -1, -8, -31, 104, 104, 1343, 682), OrientationMatrix(-0.000376719108317047, -0.000604094355367124, 0.000955157214775681, 0, 0.00113015726674348, -0.000201364789973013, 0.000318385660648346, 0, -5.50123445061668e-12, 0.0010068240808323, 0.000636771495919675, 0, 0, -0.00241637229919434, -5.91517782211304, 1, 0, -1.00521302223206, 1.09491062164307, -0.493603199720383, 0.500335872173309, 0.115934371948242, 11.7113647460938), Drawings[18: 'Region', 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7', 'PrimaryFerrite1_8'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=50, dYForGrid=50, dZForGrid=50, dRForGrid=50, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
@@ -31965,7 +31792,7 @@ $begin 'AnsoftProject'
 				DesignInstanceID=14
 				$begin 'WindowPosition'
 					$begin 'EditorWindow'
-						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 194, 237, 1433, 815), OrientationMatrix(-0.000374519528122619, -0.000600567203946412, 0.000949580105952919, 0, 0.00112355838064104, -0.000200189024326392, 0.000316526711685583, 0, -2.44550820566181e-11, 0.00100094522349536, 0.000633053597994149, 0, 2.84714598564051e-08, -0.00815745908766985, -5.91563081741333, 1, 0, -1.93084108829498, 1.93084108829498, -1, 1, 0.13618803024292, 11.6847534179688), Drawings[17: 'Region', 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=100, dYForGrid=100, dZForGrid=100, dRForGrid=100, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
+						Circuit(Editor3d(View('View Orientation Gadget'=1, WindowPos(5, -1, -1, -8, -31, 194, 237, 1433, 815), OrientationMatrix(-0.000374519528122619, -0.000600567203946412, 0.000949580105952919, 0, 0.00112355838064104, -0.000200189024326392, 0.000316526711685583, 0, -2.44550820566181e-11, 0.00100094522349536, 0.000633053597994149, 0, 2.79396772384644e-08, -0.00815746188163757, -5.91563081741333, 1, 0, -2.29372358322144, 2.30560255050659, -1.17382144927979, 1.20821094512939, 0.13618803024292, 11.6847534179688), Drawings[17: 'Region', 'SeconadaryCoil', 'SecondaryFerrite', 'SeconadaryCoil_Section1', 'PrimaryCoil_1', 'PrimaryCoil_2', 'PrimaryCoil_1_Section1_1', 'PrimaryCoil_2_Section1_1', 'Aluminum', 'PrimaryFerrite1', 'PrimaryFerrite1_1', 'PrimaryFerrite1_2', 'PrimaryFerrite1_3', 'PrimaryFerrite1_4', 'PrimaryFerrite1_5', 'PrimaryFerrite1_6', 'PrimaryFerrite1_7'], 'View Data'('Render Mode'=1, 'Show Ruler'=1, 'Coordinate Systems View Mode'=1, 'CS Triad View Mode'=0, 'Render Facets'=1, GridVisible=1, GridAutoAdjust=1, GridAutoExtents=1, GridType='Rect', GridStyle='Line', NumPixels=30, dXForGrid=100, dYForGrid=100, dZForGrid=100, dRForGrid=100, dThetaForGrid=10), ClipPlanes(ClipPlaneOptions(DisableWhenDrawingNewPlane=true, ForceOpqaueForUnclipped=false, ShowClipped=false, Transparency=0, HandleColor=16776960)))))
 					$end 'EditorWindow'
 				$end 'WindowPosition'
 				$begin 'ReportSetup'
