@@ -11,5 +11,5 @@
 #include <stdint.h>
 
 void adc_init() {
-	ADCSRA |= (1<<ADEN) | (1<<ADSC) | () |
+	ADCSRA |= (1<<ADEN) | (1<<ADSC);
 }

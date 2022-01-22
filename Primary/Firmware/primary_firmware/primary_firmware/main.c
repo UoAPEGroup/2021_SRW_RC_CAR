@@ -16,7 +16,7 @@
 int main(void)
 {
 	usart_init();
-	timer1_init(70);
+	timer1_init(40);
 	adc_init();
 	//timer0_init();
 	sei();
