@@ -1,16 +1,16 @@
 $begin 'ConnectionParameters'
-	DesktopProcessID=14796
+	DesktopProcessID=15024
 	DesktopProcessPath='C:\\Program Files\\AnsysEM\\AnsysEM21.1\\Win64\\ansysedt.exe'
 	LaunchedByWB=false
 	$begin 'DesktopStubBlock'
 		$begin 'CommDetails'
 			TransportType=1
 			IPAddress='10.104.142.208'
-			ListenPort='56694'
+			ListenPort='64247'
 		$end 'CommDetails'
 		$begin 'Marshall'
 			InstanceID=503
-			ProcID=14796
+			ProcID=15024
 			InterfaceID=1
 			FactoryIntID='DesktopInterfaceForWBProxyStubFactory'
 		$end 'Marshall'
@@ -19,11 +19,11 @@ $begin 'ConnectionParameters'
 		$begin 'CommDetails'
 			TransportType=1
 			IPAddress='10.104.142.208'
-			ListenPort='56694'
+			ListenPort='64247'
 		$end 'CommDetails'
 		$begin 'Marshall'
 			InstanceID=505
-			ProcID=14796
+			ProcID=15024
 			InterfaceID=2
 			FactoryIntID='DesktopInterfaceForWBProxyStubFactory'
 		$end 'Marshall'
