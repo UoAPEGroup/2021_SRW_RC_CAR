@@ -1,7 +1,7 @@
 Protel Design System Design Rule Check
 PCB File : C:\Users\marti\OneDrive - The University of Auckland\Summer Workshop\2021_SRW_RC_CAR\Secondary\Hardware\Motor Controller\Altium\MotorControllerV1.PcbDoc
 Date     : 1/02/2022
-Time     : 4:26:39 PM
+Time     : 7:33:08 PM
 
 Processing Rule : Clearance Constraint (Gap=0.4mm) (All),(All)
 Rule Violations :0
@@ -34,12 +34,7 @@ Processing Rule : Hole To Hole Clearance (Gap=0.254mm) (All),(All)
 Rule Violations :0
 
 Processing Rule : Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)
-   Violation between Minimum Solder Mask Sliver Constraint: (0.037mm < 0.1mm) Between Pad Q1-2(159.512mm,57.785mm) on Top Layer And Via (160.909mm,57.531mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.037mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.049mm < 0.1mm) Between Pad Q1-4(159.512mm,60.325mm) on Top Layer And Via (159.385mm,61.284mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.049mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.037mm < 0.1mm) Between Pad Q2-2(159.512mm,67.385mm) on Top Layer And Via (160.909mm,67.691mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.037mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.07mm < 0.1mm) Between Pad Q3-2(164.592mm,61.313mm) on Top Layer And Via (164.973mm,62.738mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.07mm]
-   Violation between Minimum Solder Mask Sliver Constraint: (0.065mm < 0.1mm) Between Pad Q3-3(163.322mm,61.313mm) on Top Layer And Via (163.576mm,62.738mm) from Top Layer to Bottom Layer [Top Solder] Mask Sliver [0.065mm]
-Rule Violations :5
+Rule Violations :0
 
 Processing Rule : Silk To Solder Mask (Clearance=0.1mm) (IsPad),(All)
 Rule Violations :0
@@ -57,6 +52,6 @@ Processing Rule : Height Constraint (Min=0mm) (Max=50mm) (Prefered=12.7mm) (All)
 Rule Violations :0
 
 
-Violations Detected : 5
+Violations Detected : 0
 Waived Violations : 0
 Time Elapsed        : 00:00:02
