@@ -10,12 +10,15 @@
 #define USART_H_
 
 //global variables
-uint8_t data;
-
+uint8_t input;
+uint8_t process_duty_cycle;
+uint8_t process_current;
+uint8_t receive_array[4];
+uint8_t receive_index;
 
 //functions
 void usart_init();
 uint8_t usart_receive();
-void usart_transmit();
+void usart_transmit_byte(uint8_t byte);
 
 #endif /* USART_H_ */

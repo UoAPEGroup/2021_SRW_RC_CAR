@@ -26,10 +26,21 @@
 //timer 1A and timer 1B have opposite modes of pwm (inverting vs non-inverting). 
 void timer1_init(uint8_t duty_cycle) { 
 	DDRB |= (1<<PINB1) | (1<<PINB2); //pwm pins set as outputs
-	TCCR1A |= (1<<COM1A1) | /*(1<<COM1A0) |*/ (1<<COM1B1) | (1<<COM1B0) |(1<<WGM10) | (1<<WGM11); 
+	TCCR1A |= (1<<COM1A1) | (1<<COM1B1) | (1<<COM1B0) |(1<<WGM10) | (1<<WGM11); 
 	TCCR1B |= (1<<CS10) /*| (1<<WGM13)*/; 
-	OCR1A = (uint16_t)TOP_COUNTS*(100-duty_cycle)/100;
-	OCR1B = (uint16_t)TOP_COUNTS*(duty_cycle)/100; //duty cycle is intentionally "opposite" of first PWM to provide 180deg phase shift
+	
+	switch (duty_cycle) {
+		case 0: //turn both legs off
+		break;
+		
+		case 100: //turn one leg on
+		break;
+		
+		default:
+		OCR1A = (uint16_t)TOP_COUNTS*(100-duty_cycle)/100;
+		OCR1B = (uint16_t)TOP_COUNTS*(duty_cycle)/100; //duty cycle is intentionally "opposite" of first PWM to provide 180deg phase shift
+	}
+	
 }
 
 void change_duty_cycle(uint8_t duty_cycle) {
