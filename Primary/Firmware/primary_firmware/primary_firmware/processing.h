@@ -9,7 +9,9 @@
 #ifndef CALCULATIONS_H_
 #define CALCULATIONS_H_
 
+#include "stdint.h"
 
+uint8_t extract_duty_cycle(uint8_t array[4]);
 
 
 

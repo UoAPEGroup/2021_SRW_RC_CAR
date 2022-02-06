@@ -9,11 +9,12 @@
 #include <avr/io.h>
 #include <avr/interrupt.h>
 #include <stdint.h>
-#include "USART.h"
+#include <string.h>
+#include "usart.h"
 #include "output_messages.h"
 
 //macros
-#define UBRR 12 //for setting the baud rate
+#define UBRR 103 //for setting the baud rate
 #define BACKSPACE 8 //ascii
 #define CARRIAGE_RETURN 13 //ascii
 
@@ -21,7 +22,6 @@
 //global variables
 uint8_t input = 0; //received through usart
 uint8_t process_duty_cycle = 0;
-uint8_t process_current = 0;
 uint8_t receive_array[4] = {0};
 uint8_t receive_index = 0;
 
@@ -38,86 +38,71 @@ void usart_transmit_byte(uint8_t byte) {
 	UDR0 = byte;
 }
 
-//uint8_t usart_receive() {
-//while (~UCSR0A & (1<<RXC0)) {
-//;
-//}
-//usart_transmit();
-//PORTD ^= 1<<PIND5;
-//return UDR0; //return UDR0
-//}
+void usart_transmit_string(char string[]) {
+	for (uint8_t i = 0; i < strlen(string); i++) {
+		usart_transmit_byte(string[i]);
+	}
+}
 
 ISR(USART0_RX_vect) {
 	
-	if (process_duty_cycle) {
-		if (48 <= UDR0 && UDR0 <= 57) { //a number is being transmitted
-			receive_array[receive_index] = UDR0 - 47; //decode ascii and store
+	uint8_t input = UDR0;
+	
+	if (input == 'C') { //cancel 'D' or 'I' operation
+		process_duty_cycle = 0;
+		receive_index = 0;
+		//transmit confirmation
+		transmit_confirmation_cancel();
+		
+/////////////////////////////////////////////////
+		
+	} else if (process_duty_cycle) {
+		if (48 <= input && input <= 57) { //a number is being transmitted
+			receive_array[receive_index] = input - 48; //decode ascii and store
 			receive_index++;
 			
 		} else {
-			switch (UDR0) {
+			switch (input) {
 				case BACKSPACE:
 				receive_index--;
 				break;
 				
 				case CARRIAGE_RETURN:
-				process_duty_cycle++;
-				//transmit confirmation
+				if (receive_index > 0) {
+					process_duty_cycle++;
+				}
 				break;
 			}
-	
-	} else if (process_current) {
-		if (48 <= UDR0 && UDR0 <= 57) { //a number is being transmitted
-			receive_array[receive_index] = UDR0 - 47; //decode ascii and store
-			receive_index++;
-			
-			} else {
-			switch (UDR0) {
-				case BACKSPACE:
-				receive_index--;
-				break;
-				
-				case CARRIAGE_RETURN:
-				process_current++;
-				//transmit confirmation
-				break;
-			}	
+		}
+		
+/////////////////////////////////////////////////
 		
 	} else {
-		switch(UDR0) {
+		
+		switch (input) {
+			
 			case 'D': //user will enter new duty cycle
 			process_duty_cycle = 1;
-			process_current = 0;
-			//transmit confirmation
 			break;
 			
-			case 'I': //user will enter new secondary short circuit current
-			process_current = 1;
+			case '?': //show available user commands
 			process_duty_cycle = 0;
-			//transmit confirmation
+					//transmit confirmation
+					transmit_help();
 			break;
 			
 			case 'X': //turn primary inverter off
-			TCCR1A &= ~((1<<COM1A1) | (1<<COM1B1) | (1<<COM1B0));
-			process_current = 0;
+			TCCR1B &= ~((1<<CS10) | (1<<CS11) | (1<<CS12));
 			process_duty_cycle = 0;
-			//transmit confirmation
+			transmit_confirmation_off();
 			break;
 			
 			case 'Y': //resume PWM with previous duty cycle
-			TCCR1A |= (1<<COM1A1) | (1<<COM1B1) | (1<<COM1B0);
-			process_current = 0;
+			TCCR1B |= (1<<CS10);
 			process_duty_cycle = 0;
-			//transmit confirmation
-			break;
-			
-			case 'C': //cancel 'D' or 'I' operation
-			process_duty_cycle = 0;
-			process_current = 0;
-			//transmit confirmation
+			transmit_confirmation_resume();
 			break;
 
 		} //end of switch(UDR0)
 	}
-	usart_transmit_byte(48);
-}
+} //end of ISR

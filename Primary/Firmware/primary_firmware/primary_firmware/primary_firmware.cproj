@@ -154,10 +154,13 @@
     <Compile Include="adc.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="calculations.c">
+    <Compile Include="global.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="calculations.h">
+    <Compile Include="processing.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="processing.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="main.c">

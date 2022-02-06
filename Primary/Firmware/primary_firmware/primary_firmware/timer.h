@@ -13,6 +13,7 @@
 
 void timer1_init(uint8_t duty_cycle);
 void timer0_init();
+void change_duty_cycle(uint8_t duty_cycle);
 
 
 
